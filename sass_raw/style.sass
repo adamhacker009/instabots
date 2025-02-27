@@ -4,6 +4,7 @@
 
 $blue: #4754EB
 $gray: #F2F2F2
+$dark-gray: #808080
 
 *
   margin: 0
@@ -53,12 +54,103 @@ a
 .container
   width: 95%
 
-.header > .container
+.header-container
+  gap: 1rem
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
+  align-items: center
+
+.send-mail
+  background-image: url("../images/imgs/1Screen.png")
+  background-size: cover
+  display: flex
+  justify-content: center
+
+.send-mail > .container
+  display: flex
+
+.send-mail__container
+  display: flex
+  align-items: center
+
+.send-mail__content > h3
+  font-size: 40pt
+  width: 60%
+
+.our-advantages
+  background-color: white
+  display: flex
+  justify-content: center
+  padding-top: 40px
+
+.our-advantages > .container > div > h3
+  font-size: 20pt
+
+.our-advantages__container
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 1rem
+
+.dark-text
+  color: $dark-gray
+  font-size: 8pt
+  width: 25%
+
+
+.send-mail__input
+  padding: 0.5rem
+  background-color: rgba(255, 255, 255, 0.5)
+  border-radius: 1rem
+  width: 40%
+  display: flex
+
+.send-mail__footer
+  display: flex
+  align-items: center
+  gap: 0.5rem
+  color: white
+
+.send-mail__input > input
+  font-family: "VisueltPro", sans-serif
+  font-size: 12pt
+
+.email-box
+  color: $dark-gray
+  border: none
+  width: 100%
+  background-color: rgba(0, 0, 0, 0)
+
+.send-button
+  padding: 0.7rem 1rem
+  font-weight: 700
+  color: $blue
+  background-color: white
+  border: none
+  border-radius: 0.5rem
+
+.send-mail__content
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 60%
+
+.send-mail > .container > div > h3
+  font-weight: 500
+  font-size: 20pt
+
+.advantage_text
+  background-color: $gray
+  color: $dark-gray
+  height: 100%
+
+.header-right
+  width: 17%
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .generic-button
-
+  padding: 1rem
   border-radius: 1rem
   color: white
   background-color: $blue
