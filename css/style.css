@@ -10,6 +10,7 @@
 
 body {
   font-family: "VisueltPro", sans-serif;
+  background-color: #F2F2F2;
 }
 
 a {
@@ -29,21 +30,42 @@ a {
   grid-template-rows: auto;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.high-light {
+  color: #4754EB;
 }
 
-.header-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  justify-items: center;
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
   align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-center__nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  gap: 1rem;
+}
+
+.container {
+  width: 95%;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .generic-button {
-  padding: 1rem;
   border-radius: 1rem;
   color: white;
   background-color: #4754EB;

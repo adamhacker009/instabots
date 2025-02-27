@@ -2,6 +2,8 @@
   font-family: 'VisueltPro'
   src: url('./fonts/VisueltPro-Regular.ttf')
 
+$blue: #4754EB
+$gray: #F2F2F2
 
 *
   margin: 0
@@ -10,6 +12,7 @@
 
 body
   font-family: 'VisueltPro', sans-serif
+  background-color: $gray
 
 a
   text-decoration: none
@@ -20,28 +23,42 @@ a
   grid-template-columns: 1fr 50fr 1fr
   height: 100vh
 
-
 .grid-wrapper
   display: grid
   grid-column: 2
   grid-template-rows: auto
 
+.high-light
+  color: $blue
 
-.wrapper
-  display: grid
-  grid-template-columns: repeat(12, 1fr)
-
-.header-nav
-  display: grid
-  grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr
-  grid-template-rows: 1fr 2fr
-  justify-items: center
+.header
+  display: flex
+  justify-content: center
+  background-color: white
   align-items: center
+  border-top-left-radius: 2rem
+  border-top-right-radius: 2rem
 
+.header-center
+  display: flex
+  justify-content: center
+  width: 100%
 
+.header-center__nav
+  display: flex
+  justify-content: space-evenly
+  width: 40%
+  gap: 1rem
+
+.container
+  width: 95%
+
+.header > .container
+  display: flex
+  justify-content: space-evenly
 
 .generic-button
-  padding: 1rem
+
   border-radius: 1rem
   color: white
-  background-color: #4754EB
+  background-color: $blue
