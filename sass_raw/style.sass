@@ -1,0 +1,47 @@
+@font-face
+  font-family: 'VisueltPro'
+  src: url('./fonts/VisueltPro-Regular.ttf')
+
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'VisueltPro', sans-serif
+
+a
+  text-decoration: none
+  color: inherit
+
+.main-grid
+  display: grid
+  grid-template-columns: 1fr 50fr 1fr
+  height: 100vh
+
+
+.grid-wrapper
+  display: grid
+  grid-column: 2
+  grid-template-rows: auto
+
+
+.wrapper
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+
+.header-nav
+  display: grid
+  grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr
+  grid-template-rows: 1fr 2fr
+  justify-items: center
+  align-items: center
+
+
+
+.generic-button
+  padding: 1rem
+  border-radius: 1rem
+  color: white
+  background-color: #4754EB
