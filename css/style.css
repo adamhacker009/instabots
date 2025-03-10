@@ -119,7 +119,8 @@ a {
 }
 
 .send-mail__form {
-  height: 628px;
+  max-height: 628px;
+  max-width: 628px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -429,7 +430,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 274px;
 }
 .tariff__feature {
   display: flex;
@@ -444,10 +444,6 @@ a {
 .tariff__button {
   font-size: 18px;
   font-weight: bold;
-}
-
-.fair-price__form {
-  width: 465px;
 }
 
 .fair-price__form > h3 {
@@ -521,7 +517,6 @@ a {
 .fair-price__input {
   display: flex;
   height: 64px;
-  width: 456px;
   background-color: #F2F2F2;
   padding: 8px;
   border-radius: 16px;
@@ -623,6 +618,10 @@ a {
   gap: 8px;
 }
 
+.fair-price__form {
+  max-width: 456px;
+}
+
 .fair-price__button {
   color: white;
   background-color: #4754EB;
@@ -675,7 +674,7 @@ a {
     display: block;
   }
   .feedback__form > p {
-    width: 486px;
+    max-width: 486px;
   }
   .lang-change {
     display: none;
@@ -727,8 +726,11 @@ a {
     display: none;
   }
   .work-info {
-    width: 608px;
+    max-width: 608px;
     height: auto;
+  }
+  .fair-price__form {
+    max-width: 450px;
   }
   .work-info > div:nth-child(2) {
     margin-top: 40px;
