@@ -58,18 +58,21 @@ a
   margin: 0 auto
   max-width: 1344px
 
-.input-container
-  background-color: rgba(255, 255, 255, 0.5)
-  padding: 8px
-  border-radius: 16px
-  display: flex
+.header-burger__lang-change
+  @extend .lang-change
+
 
 .inside-input
+  width: 100%
   font-size: 18px
   font-family: "VisueltPro", sans-serif
   border: none
-  background-color: $null
-  width: 100%
+  padding: 20px 16px
+  background-color: rgba(255, 255, 255, 0.5)
+  border-radius: 16px
+
+  &__input
+    padding: 16px 20px
 
 .input-button
   padding: 12px 24px
@@ -106,6 +109,7 @@ a
   color: $dark-gray
 
 .send-mail__form
+  gap: 126px
   max-height: 628px
   max-width: 628px
   display: flex
@@ -135,6 +139,7 @@ a
 .send-mail__container
   display: flex
   align-items: center
+  padding: 8px 0
 
 .our-advantages
   background-color: white
@@ -227,13 +232,16 @@ a
   margin-bottom: 40px
 
 .send-mail__input
-  @extend .input-container
   max-width: 465px
+  position: relative
 
 .send-mail__button
   @extend .input-button
   color: $blue
   background-color: white
+  position: absolute
+  top: 8px
+  right: 8px
 
 .work-info__p
   @extend .dark-text
@@ -277,6 +285,7 @@ a
 
 .reviews__container > h3
   font-size: 36px
+  justify-self: flex-start
 
 .reviews__button
   @extend .generic-button-alt
@@ -289,7 +298,7 @@ a
 
 .review
   position: fixed
-  width: 628px
+  max-width: 628px
   border-radius: 20px
   border: 1px solid rgba(255, 255, 255, 0.5)
 
@@ -357,6 +366,8 @@ a
   border-radius: 25px
   border-color: rgba(255, 255, 255, 0.5)
   filter: drop-shadow(0 0 5px $gray)
+  max-width: 340px
+  min-width: 270px
 
   &__body
     background-color: $gray
@@ -447,12 +458,15 @@ a
   align-items: center
 
 .fair-price__input
-  @extend .inside-input
-  display: flex
-  height: 64px
+  position: relative
   background-color: $gray
-  padding: 8px
-  border-radius: 16px
+  color: $dark-gray
+  border-radius: 20px
+
+.fair-price__button
+  @extend .send-mail__button
+  color: white
+  background-color: $blue
 
 .our-tariffs > .container > h3
   font-size: 36px
@@ -462,6 +476,7 @@ a
   @extend .container-lg
   display: grid
   grid-template-columns: repeat(4, 1fr)
+  justify-items: center
   gap: 24px
 
 .feedback__container
@@ -477,23 +492,38 @@ a
   font-size: 36px
   margin-bottom: 16px
 
+#burger-hidden
+  display: none
+
+#burger-show
+  display: block
+
 .feedback__form > p
   color: $dark-gray
   font-size: 18px
   line-height: 135%
   margin-bottom: 24px
 
+.questions__head
+  padding-left: 30px
+
 .inside-textarea
   @extend .inside-input
   resize: none
+  width: 100%
   padding: 16px
+  background-color: #F2F2F2
+  color: #808080
+  font-size: 18px
+  border-radius: 24px
 
 .feedback__area
   background-color: $gray
   color: $dark-gray
   font-size: 18px
   border-radius: 24px
-  height: 80px
+
+
 
 .feedback__inputs
   display: flex
@@ -511,7 +541,8 @@ a
   color: $dark-gray
   font-size: 18px
   padding: 16px
-  border-radius: 24px
+  width: 100%
+  border-radius: 16px
 
 .feedback__form_button
   @extend .generic-button
@@ -597,26 +628,47 @@ a
   .scroll-next
     display: none
 
+  .header-burger
+    font-size: 56px
+    background-image: url("../images/svg/dudaduu.svg")
+    border-radius: 0 0 24px 24px
+
+    &__lang-change
+      display: block
+
+    &__head
+      font-size: 24px
+      color: $dark-gray
+      margin-bottom: 40px
+
+    &__lang-change
+      font-size: 56px
+
+    &__nav
+      display: flex
+      flex-direction: column
+      gap: 25px
+      margin-bottom: 156px
+
+    &__container
+      padding: 80px 0
+
   .how-we-work__container
     flex-direction: column
 
   .send-mail__form
     height: auto
-    width: 628px
+    max-width: 628px
 
   .our-tariffs__container
     grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: repeat(2, 1fr)
-    justify-items: center
-    align-items: center
 
-  .tariff
-    width: 324px
 
   .reviews__container
     display: grid
     grid-template-rows: 1fr repeat(4, 3fr)
     gap: 25px
+    justify-items: center
 
   .header__burger
     display: block
@@ -630,9 +682,6 @@ a
 
   .reviews__button
     display: none
-
-  .questions__head
-    margin-left: 32px
 
   .fair-price__container
     flex-direction: column
@@ -649,3 +698,7 @@ a
 
   .work-info > div:nth-child(2)
     margin-top: 40px
+
+@media (max-width: 660px)
+  .our-tariffs__container
+    grid-template-columns: 1fr

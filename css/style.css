@@ -64,22 +64,20 @@ a {
   max-width: 1344px;
 }
 
-.input-container, .send-mail__input {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 8px;
-  border-radius: 16px;
-  display: flex;
-}
-
-.inside-input, .inside-textarea, .fair-price__input {
+.inside-input, .inside-textarea {
+  width: 100%;
   font-size: 18px;
   font-family: "VisueltPro", sans-serif;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
+  padding: 20px 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+.inside-input__input {
+  padding: 16px 20px;
 }
 
-.input-button, .fair-price__button, .send-mail__button {
+.input-button, .send-mail__button, .fair-price__button {
   padding: 12px 24px;
   border: none;
   border-radius: 16px;
@@ -102,7 +100,7 @@ a {
   z-index: 1;
 }
 
-.lang-change {
+.lang-change, .header-burger__lang-change {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   word-spacing: 2px;
@@ -119,6 +117,7 @@ a {
 }
 
 .send-mail__form {
+  gap: 126px;
   max-height: 628px;
   max-width: 628px;
   display: flex;
@@ -153,6 +152,7 @@ a {
 .send-mail__container {
   display: flex;
   align-items: center;
+  padding: 8px 0;
 }
 
 .our-advantages {
@@ -265,11 +265,15 @@ a {
 
 .send-mail__input {
   max-width: 465px;
+  position: relative;
 }
 
-.send-mail__button {
+.send-mail__button, .fair-price__button {
   color: #4754EB;
   background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .work-info__p {
@@ -322,6 +326,7 @@ a {
 
 .reviews__container > h3 {
   font-size: 36px;
+  justify-self: flex-start;
 }
 
 .reviews__button {
@@ -336,7 +341,7 @@ a {
 
 .review {
   position: fixed;
-  width: 628px;
+  max-width: 628px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -416,6 +421,8 @@ a {
   border-radius: 25px;
   border-color: rgba(255, 255, 255, 0.5);
   filter: drop-shadow(0 0 5px #F2F2F2);
+  max-width: 340px;
+  min-width: 270px;
 }
 .tariff__body {
   background-color: #F2F2F2;
@@ -515,11 +522,15 @@ a {
 }
 
 .fair-price__input {
-  display: flex;
-  height: 64px;
+  position: relative;
   background-color: #F2F2F2;
-  padding: 8px;
-  border-radius: 16px;
+  color: #808080;
+  border-radius: 20px;
+}
+
+.fair-price__button {
+  color: white;
+  background-color: #4754EB;
 }
 
 .our-tariffs > .container > h3 {
@@ -530,6 +541,7 @@ a {
 .our-tariffs__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   gap: 24px;
 }
 
@@ -549,6 +561,14 @@ a {
   margin-bottom: 16px;
 }
 
+#burger-hidden {
+  display: none;
+}
+
+#burger-show {
+  display: block;
+}
+
 .feedback__form > p {
   color: #808080;
   font-size: 18px;
@@ -556,9 +576,18 @@ a {
   margin-bottom: 24px;
 }
 
+.questions__head {
+  padding-left: 30px;
+}
+
 .inside-textarea {
   resize: none;
+  width: 100%;
   padding: 16px;
+  background-color: #F2F2F2;
+  color: #808080;
+  font-size: 18px;
+  border-radius: 24px;
 }
 
 .feedback__area {
@@ -566,7 +595,6 @@ a {
   color: #808080;
   font-size: 18px;
   border-radius: 24px;
-  height: 80px;
 }
 
 .feedback__inputs {
@@ -586,7 +614,8 @@ a {
   color: #808080;
   font-size: 18px;
   padding: 16px;
-  border-radius: 24px;
+  width: 100%;
+  border-radius: 16px;
 }
 
 .feedback__form_button {
@@ -676,32 +705,52 @@ a {
   .feedback__form > p {
     max-width: 486px;
   }
-  .lang-change {
+  .lang-change, .header-burger__lang-change {
     display: none;
   }
   .scroll-next {
     display: none;
+  }
+  .header-burger {
+    font-size: 56px;
+    background-image: url("../images/svg/dudaduu.svg");
+    border-radius: 0 0 24px 24px;
+  }
+  .header-burger__lang-change {
+    display: block;
+  }
+  .header-burger__head {
+    font-size: 24px;
+    color: #808080;
+    margin-bottom: 40px;
+  }
+  .header-burger__lang-change {
+    font-size: 56px;
+  }
+  .header-burger__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 156px;
+  }
+  .header-burger__container {
+    padding: 80px 0;
   }
   .how-we-work__container {
     flex-direction: column;
   }
   .send-mail__form {
     height: auto;
-    width: 628px;
+    max-width: 628px;
   }
   .our-tariffs__container {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-  .tariff {
-    width: 324px;
   }
   .reviews__container {
     display: grid;
     grid-template-rows: 1fr repeat(4, 3fr);
     gap: 25px;
+    justify-items: center;
   }
   .header__burger {
     display: block;
@@ -715,9 +764,6 @@ a {
   }
   .reviews__button {
     display: none;
-  }
-  .questions__head {
-    margin-left: 32px;
   }
   .fair-price__container {
     flex-direction: column;
@@ -734,6 +780,11 @@ a {
   }
   .work-info > div:nth-child(2) {
     margin-top: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .our-tariffs__container {
+    grid-template-columns: 1fr;
   }
 }
 
