@@ -15,7 +15,7 @@ $null: rgba(0,0,0,0.0)
 body
   font-family: 'VisueltPro', sans-serif
   background-color: $gray
-  padding: 24px
+  padding: 1.5rem
   min-height: 100vh
 
 a
@@ -25,7 +25,7 @@ a
 
 .section-head
   color: black
-  font-size: 36px
+  font-size: 2.25rem
 
 .header__button_collection
   display: flex
@@ -37,26 +37,26 @@ a
 .header__burger_button
   background-color: rgba(255, 255, 255, 0.0)
   border: none
-  padding: 8px
+  padding: 0.5rem
 
 .page-wrapper
   background-color: white
-  border-radius: 24px
+  border-radius: 1.5rem
 
 .wrapper
-  padding: 0 24px
+  padding: 0 1.5rem
 
 .container
   margin: 0 auto
-  max-width: 1280px
+  max-width: 80rem
 
 .container-blur
-  backdrop-filter: blur(140px)
+  backdrop-filter: blur(8.75rem)
   background-color: rgba(255, 255, 255, 0.65)
 
 .container-lg
   margin: 0 auto
-  max-width: 1344px
+  max-width: 84rem
 
 .header-burger__lang-change
   @extend .lang-change
@@ -64,34 +64,34 @@ a
 
 .inside-input
   width: 100%
-  font-size: 18px
+  font-size: 1.125rem
   font-family: "VisueltPro", sans-serif
   border: none
-  padding: 20px 16px
+  padding: 1.25rem 1rem
   background-color: rgba(255, 255, 255, 0.5)
-  border-radius: 16px
+  border-radius: 1rem
 
   &__input
-    padding: 16px 20px
+    padding: 1rem 1.25rem
 
 .input-button
-  padding: 12px 24px
+  padding: 0.75rem 1.5rem
   border: none
-  border-radius: 16px
-  font-size: 18px
+  border-radius: 1rem
+  font-size: 1.125rem
 
 .header__wrapper
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 24px 0
+  padding: 1.5rem 0
 
 .header
-  font-size: 18px
+  font-size: 1.125rem
   background-color: white
   position: sticky
-  border-top-left-radius: 24px
-  border-top-right-radius: 24px
+  border-top-left-radius: 1.5rem
+  border-top-right-radius: 1.5rem
   z-index: 1
 
 .lang-change
@@ -99,34 +99,34 @@ a
   border: none
   word-spacing: 2px
   color: $blue
-  font-size: 18px
-  margin-right: 16px
+  font-size: 1.125rem
+  margin-right: 1rem
 
 .header__nav
   display: flex
   justify-content: space-between
-  width: 501px
+  width: 31.32rem
   color: $dark-gray
 
 .send-mail__form
-  gap: 126px
-  max-height: 628px
-  max-width: 628px
+  gap: 7.875rem
+  max-height: 39.25rem
+  max-width: 39.25rem
   display: flex
   flex-direction: column
   justify-content: space-around
 
 .under-text
-  margin: 16px 0 0 8px
-  width: 354px
+  margin: 1rem 0 0 0.5rem
+  width: 22.13rem
   line-height: 135%
-  font-size: 12px
+  font-size: 0.75rem
   color: $dark-gray
 
 .scroll-next
   display: flex
   align-items: center
-  gap: 8px
+  gap: 0.5rem
 
 .scroll-next > span
   color: white
@@ -134,21 +134,21 @@ a
 .send-mail
   background-image: url("../images/svg/1Screen.svg")
   background-size: cover
-  background-position-y: -150px
+  background-position: center
 
 .send-mail__container
   display: flex
   align-items: center
-  padding: 8px 0
+  padding: 0.5rem 0
 
 .our-advantages
   background-color: white
 
 .our-advantages__container
-  padding: 80px 0
+  padding: 5rem 0
 
 .our-advantages__head
-  margin-bottom: 40px
+  margin-bottom: 2.5rem
 
 .dark-text
   color: $dark-gray
@@ -156,29 +156,36 @@ a
 .high-light
   color: $blue
 
+.advantage
+  border-radius: 1.5rem
+  filter: drop-shadow(0px 0px 20px rgba(25, 25, 25, 0.05))
+
 .our-advantages__grid
   @extend .container-lg
   display: grid
   grid-template-columns: repeat(3, 1fr)
-  column-gap: 16px
+  column-gap: 1rem
 
 .advantage__emoji
-  font-size: 56px
+  font-size: 3.5rem
 
 .advantage__head
-  font-size: 24px
-  padding: 12px 0 12px 8px
+  font-size: 1.5rem
+  padding: 0.75rem 0 0.75rem 0.5rem
+  background-color: white
+  border-radius: 1.5rem 1.5rem 0 0
 
   h3
     display: flex
     align-items: center
 
   img
-    margin-right: 12px
+    margin-right: 0.75rem
 
 .advantage__body
-  background-color: $gray
-  padding: 24px
+  background-color: #fdfdfd
+  border-radius: 0 0 1.5rem 1.5rem
+  padding: 0.75rem
 
 .advantage__body > p
   color: $dark-gray
@@ -189,50 +196,50 @@ a
 .how-we-work__container
   display: flex
   align-items: center
-  gap: 24px
+  gap: 1.5rem
 
 .how-we-work__inside
-  padding: 80px 0
+  padding: 5rem 0
 
 .how-we-work__inside > h3
-  font-size: 36px
-  margin-bottom: 41px
+  font-size: 2.25rem
+  margin-bottom: 2.57rem
 
 .work-info
-  width: 463px
-  height: 533px
+  width: 28.94rem
+  height: 33.313rem
   display: flex
   flex-direction: column
   justify-content: space-between
 
 .work-info__elements
   display: flex
-  width: 422px
+  width: 26.38rem
   align-items: center
-  gap: 16px
-  margin-bottom: 30px
+  gap: 1rem
+  margin-bottom: 1.88rem
 
 .work-info__head
-  font-size: 36px
-  margin-bottom: 16px
+  font-size: 2.25rem
+  margin-bottom: 1rem
 
 .work-info__high_light
   @extend .high-light
-  font-size: 12px
-  margin-bottom: 24px
+  font-size: 0.75rem
+  margin-bottom: 1.5rem
 
 .decorative-line
   background-color: white
-  width: 24px
+  width: 1.5rem
   height: 1px
 
 .big-text
-  font-size: 56px
+  font-size: 3.5rem
   line-height: 125%
-  margin-bottom: 40px
+  margin-bottom: 2.5rem
 
 .send-mail__input
-  max-width: 465px
+  max-width: 29.06rem
   position: relative
 
 .send-mail__button
@@ -240,37 +247,37 @@ a
   color: $blue
   background-color: white
   position: absolute
-  top: 8px
-  right: 8px
+  top: 0.5rem
+  right: 0.5rem
 
 .work-info__p
   @extend .dark-text
   line-height: 135%
-  font-size: 18px
+  font-size: 1.125rem
 
 .work-info__p:nth-child(1)
-  margin-bottom: 16px
+  margin-bottom: 1rem
 
 .work-info__button
   @extend .generic-button
-  font-size: 18px
+  font-size: 1.125rem
 
 .our-tariffs
-  padding: 80px 0 88px
+  padding: 5rem 0 5.5rem
 
 .our-tariffs > .wrapper > .container
-  font-size: 36px
-  margin-bottom: 40px
+  font-size: 2.25rem
+  margin-bottom: 2.5rem
 
 .tariff__head
-  padding: 20px 0 20px 24px
+  padding: 1.25rem 0 1.25rem 1.5rem
 
 .tariff__head > h4
-  font-size: 24px
+  font-size: 1.5rem
 
 .tariff__head > span
   color: $dark-gray
-  font-size: 24px
+  font-size: 1.5rem
 
 .reviews
   background-image: url("../images/svg/3Screen.svg")
@@ -280,141 +287,144 @@ a
   position: relative
   display: flex
   flex-direction: column
-  gap: 544px
-  padding: 80px 0
+  gap: 34rem
+  padding: 5rem 0
 
 .reviews__container > h3
-  font-size: 36px
+  font-size: 2.25rem
   justify-self: flex-start
 
 .reviews__button
   @extend .generic-button-alt
   font-weight: bold
-  font-size: 18px
+  font-size: 1.125rem
 
 .reviews__button_pos
   display: flex
   justify-content: flex-end
 
 .review
-  position: fixed
-  max-width: 628px
-  border-radius: 20px
+  position: absolute
+  max-width: 39.25rem
+  border-radius: 1.25rem
   border: 1px solid rgba(255, 255, 255, 0.5)
 
 .review__head
   background-color: white
-  border-top-left-radius: 16px
-  border-top-right-radius: 16px
+  border-top-left-radius: 1rem
+  border-top-right-radius: 1rem
 
 .review__head_name
-  font-size: 24px
+  font-size: 1.5rem
 
 .reviewer-info
   display: flex
   align-items: center
-  gap: 16px
+  gap: 1rem
 
 .review__head_wrapper
   display: flex
   justify-content: space-between
-  padding: 16px 24px 16px 16px
+  padding: 1rem 1.5rem 1rem 1rem
 
 .questions__wrapper_container
   @extend .wrapper
-  padding: 80px 0
+  padding: 5rem 0
 
 .review__head_data
   @extend .dark-text
   display: flex
   align-items: center
-  font-size: 18px
+  font-size: 1.125rem
 
 .review__body
   background-color: $gray
-  padding: 16px 24px
-  border-bottom-left-radius: 16px
-  border-bottom-right-radius: 16px
+  padding: 1rem 1.5rem
+  border-bottom-left-radius: 1rem
+  border-bottom-right-radius: 1rem
 
 .review__body > p
   color: $dark-gray
-  font-size: 18px
+  font-size: 1.125rem
   line-height: 135%
 
 .review1
-  top: 135px
-  left: 381px
+  transform: translateX(-50%)
+  top: 15%
+  left: 50%
 
 .review2
-  left: 56px
-  top: 216px
+  left: 0%
+  top: 23%
 
 .review3
-  top: 352px
-  right: 55px
+  top: 38%
+  right: 0%
 
 .review4
-  top: 400px
-  left: 380px
+  transform: translateX(-50%)
+  top: 55%
+  left: 46%
 
 .review__rating
-  margin-top: 16px
+  margin-top: 1rem
   display: flex
-  gap: 4px
+  gap: 0.25rem
 
 .tariff
-  border-radius: 25px
+  border-radius: 1.56rem
   border-color: rgba(255, 255, 255, 0.5)
-  filter: drop-shadow(0 0 5px $gray)
-  max-width: 340px
-  min-width: 270px
+  filter: drop-shadow(0 0 0.31rem $gray)
+  max-width: 21.25rem
+  min-width: 16.88rem
 
   &__body
     background-color: $gray
-    padding: 24px
+    padding: 1.5rem
     display: flex
     flex-direction: column
-    gap: 16px
-    border-bottom-left-radius: 24px
-    border-bottom-right-radius: 24px
+    gap: 1rem
+    border-bottom-left-radius: 1.5rem
+    border-bottom-right-radius: 1.5rem
 
   &__features
     display: flex
     flex-direction: column
-    gap: 16px
+    gap: 1rem
 
   &__feature
     display: flex
-    gap: 16px
+    gap: 1rem
     align-items: flex-start
 
   &__feature > p
-    font-size: 18px
+    font-size: 1.125rem
     line-height: 135%
     color: $dark-gray
 
   &__button
     @extend .generic-button-alt
-    font-size: 18px
+    font-size: 1.125rem
     font-weight: bold
 
 .fair-price__form > h3
-  font-size: 56px
+  font-size: 3.5rem
   line-height: 125%
-  margin-bottom: 40px
+  margin-bottom: 2.5rem
 
 .questions
   background-image: url("../images/svg/7Screen.svg")
+  background-size: 100%
 
 .questions__wrapper
   @extend .container-lg
   display: flex
   flex-direction: column
-  gap: 16px
+  gap: 1rem
 
 .questions__head > h3
-  font-size: 36px
-  margin-bottom: 40px
+  font-size: 2.25rem
+  margin-bottom: 2.5rem
 
 .question__head_wrapper
   display: flex
@@ -422,34 +432,34 @@ a
   justify-content: space-between
 
 .question__head_wrapper > h4
-  font-size: 36px
+  font-size: 2.25rem
 
 .question__head
-  border-top-left-radius: 16px
-  border-top-right-radius: 16px
-  padding: 24px 32px
+  border-top-left-radius: 1rem
+  border-top-right-radius: 1rem
+  padding: 1.5rem 2rem
   background-color: rgba(255, 255, 255, 0.5)
 
 .question__body
-  padding: 16px 48px 24px 24px
+  padding: 1rem 3rem 1.5rem 1.5rem
   background-color: rgba(255, 255, 255, 0.25)
-  border-bottom-left-radius: 16px
-  border-bottom-right-radius: 16px
+  border-bottom-left-radius: 1rem
+  border-bottom-right-radius: 1rem
 
 .question__body > p
-  font-size: 18px
+  font-size: 1.125rem
   line-height: 135%
   color: $dark-gray
 
 .question__head_closed
   @extend .question__head
-  border-bottom-left-radius: 16px
-  border-bottom-right-radius: 16px
+  border-bottom-left-radius: 1rem
+  border-bottom-right-radius: 1rem
 
 
 .question__button
-  padding: 15.51px 15.51px 13px 15.51px
-  border-radius: 24px
+  padding: 1rem 1rem 0.81rem 1rem
+  border-radius: 1.5rem
   border: none
   background-color: white
 
@@ -461,7 +471,7 @@ a
   position: relative
   background-color: $gray
   color: $dark-gray
-  border-radius: 20px
+  border-radius: 1.25rem
 
 .fair-price__button
   @extend .send-mail__button
@@ -469,28 +479,28 @@ a
   background-color: $blue
 
 .our-tariffs > .container > h3
-  font-size: 36px
-  margin-bottom: 40px
+  font-size: 2.25rem
+  margin-bottom: 2.5rem
 
 .our-tariffs__container
   @extend .container-lg
   display: grid
   grid-template-columns: repeat(4, 1fr)
   justify-items: center
-  gap: 24px
+  gap: 1.5rem
 
 .feedback__container
   display: flex
   align-items: center
-  padding: 80px 0
+  padding: 5rem 0
   justify-content: space-between
 
 .feedback__form
-  width: 486px
+  width: 30.38rem
 
 .feedback__form > h3
-  font-size: 36px
-  margin-bottom: 16px
+  font-size: 2.25rem
+  margin-bottom: 1rem
 
 #burger-hidden
   display: none
@@ -500,96 +510,96 @@ a
 
 .feedback__form > p
   color: $dark-gray
-  font-size: 18px
+  font-size: 1.125rem
   line-height: 135%
-  margin-bottom: 24px
+  margin-bottom: 1.5rem
 
 .questions__head
-  padding-left: 30px
+  padding-left: 1.87rem
 
 .inside-textarea
   @extend .inside-input
   resize: none
   width: 100%
-  padding: 16px
+  padding: 1rem
   background-color: #F2F2F2
   color: #808080
-  font-size: 18px
-  border-radius: 24px
+  font-size: 1.125rem
+  border-radius: 1.5rem
 
 .feedback__area
   background-color: $gray
   color: $dark-gray
-  font-size: 18px
-  border-radius: 24px
+  font-size: 1.125rem
+  border-radius: 1.5rem
 
 
 
 .feedback__inputs
   display: flex
   flex-direction: column
-  gap: 16px
-  margin-bottom: 40px
+  gap: 1rem
+  margin-bottom: 2.5rem
 
 .feedback__under_text
   @extend .under-text
-  width: 238px
+  width: 14.88rem
   margin: 0
 
 .feedback__input > input
   background-color: $gray
   color: $dark-gray
-  font-size: 18px
-  padding: 16px
+  font-size: 1.125rem
+  padding: 1rem
   width: 100%
-  border-radius: 16px
+  border-radius: 1rem
 
 .feedback__form_button
   @extend .generic-button
-  padding: 16px 24px
-  font-size: 18px
+  padding: 1rem 1.5rem
+  font-size: 1.125rem
   font-weight: bold
 
 .footer
   background-color: $blue
-  border-bottom-left-radius: 24px
-  border-bottom-right-radius: 24px
+  border-bottom-left-radius: 1.5rem
+  border-bottom-right-radius: 1.5rem
   color: white
 
 .footer__container
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 24px 0 25px
+  padding: 1.5rem 0 1.56rem
 
 .footer__left
-  width: 192px
+  width: 12rem
 
 .footer__right
   display: flex
-  gap: 8px
+  gap: 0.5rem
 
 .fair-price__form
-  max-width: 456px
+  max-width: 28.5rem
 
 .fair-price__button
   @extend .input-button
   color: white
   background-color: $blue
-  padding: 12px 24px
+  padding: 0.75rem 1.5rem
 
 .generic-button
   background-color: $blue
   color: white
-  padding: 12px 24px
-  border-radius: 16px
+  padding: 0.75rem 1.5rem
+  border-radius: 1rem
   border: none
 
 .image
   max-width: 100%
 
 .question
-  border-radius: 20px
+  border-radius: 1.25rem
   border: 1px solid rgba(255, 255, 255, 0.5)
 
 .generic-button-alt
@@ -599,10 +609,10 @@ a
 
 .feedback__collection
   display: flex
-  gap: 24px
+  gap: 1.5rem
   align-items: center
 
-@media (max-width: 1020px)
+@media (max-width: 1234px)
   .send-mail__container
     flex-direction: column
 
@@ -620,7 +630,7 @@ a
     display: block
 
   .feedback__form > p
-    max-width: 486px
+    max-width: 30.37rem
 
   .lang-change
     display: none
@@ -629,36 +639,36 @@ a
     display: none
 
   .header-burger
-    font-size: 56px
+    font-size: 3.5rem
     background-image: url("../images/svg/dudaduu.svg")
-    border-radius: 0 0 24px 24px
+    border-radius: 0 0 1.5rem 1.5rem
 
     &__lang-change
       display: block
 
     &__head
-      font-size: 24px
+      font-size: 1.5rem
       color: $dark-gray
-      margin-bottom: 40px
+      margin-bottom: 2.5rem
 
     &__lang-change
-      font-size: 56px
+      font-size: 3.5rem
 
     &__nav
       display: flex
       flex-direction: column
-      gap: 25px
-      margin-bottom: 156px
+      gap: 1.56rem
+      margin-bottom: 9.75rem
 
     &__container
-      padding: 80px 0
+      padding: 5rem 0
 
   .how-we-work__container
     flex-direction: column
 
   .send-mail__form
     height: auto
-    max-width: 628px
+    max-width: 39.25rem
 
   .our-tariffs__container
     grid-template-columns: repeat(2, 1fr)
@@ -667,18 +677,19 @@ a
   .reviews__container
     display: grid
     grid-template-rows: 1fr repeat(4, 3fr)
-    gap: 25px
+    gap: 1.5rem
     justify-items: center
 
   .header__burger
     display: block
-    margin-right: 16px
+    margin-right: 1rem
 
   .review
     position: static
     top: auto
     left: auto
     width: auto
+    transform: none
 
   .reviews__button
     display: none
@@ -690,15 +701,19 @@ a
     display: none
 
   .work-info
-    max-width: 608px
+    max-width: 38rem
     height: auto
 
   .fair-price__form
-    max-width: 450px
+    max-width: 28.13rem
 
   .work-info > div:nth-child(2)
-    margin-top: 40px
+    margin-top: 2.5rem
 
 @media (max-width: 660px)
   .our-tariffs__container
     grid-template-columns: 1fr
+
+@media (max-width: 580px)
+  html
+    font-size: 14px
