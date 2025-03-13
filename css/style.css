@@ -34,6 +34,10 @@ a {
   display: none;
 }
 
+.footer__link_small {
+  display: none;
+}
+
 .header__burger_button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -234,7 +238,7 @@ a {
 }
 
 .work-info {
-  width: 28.94rem;
+  max-width: 28.94rem;
   height: 33.313rem;
   display: flex;
   flex-direction: column;
@@ -243,10 +247,10 @@ a {
 
 .work-info__elements {
   display: flex;
-  width: 26.38rem;
+  max-width: 26.38rem;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.88rem;
+  margin-bottom: 1.875rem;
 }
 
 .work-info__head {
@@ -261,7 +265,7 @@ a {
 
 .decorative-line {
   background-color: white;
-  width: 1.5rem;
+  max-width: 1.5rem;
   height: 1px;
 }
 
@@ -312,6 +316,7 @@ a {
 
 .tariff__head > h4 {
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .tariff__head > span {
@@ -802,6 +807,108 @@ a {
 @media (max-width: 580px) {
   html {
     font-size: 14px;
+  }
+  body {
+    padding: 0.375rem;
+  }
+  .our-tariffs .wrapper .container h3, .our-tariffs .questions__wrapper_container .container h3 {
+    font-size: 1.125rem;
+  }
+  .reviews__container h3 {
+    font-size: 1.125rem;
+    align-self: center;
+  }
+  .fair-price__container {
+    padding: 2.5rem 0;
+  }
+  .how-we-work__inside h3 {
+    font-size: 1.125rem;
+  }
+  .questions__head h3 {
+    font-size: 1.125rem;
+  }
+  .fair-price__form {
+    max-width: 20rem;
+  }
+  .fair-price__form h3 {
+    font-size: 2.25rem;
+  }
+  .work-info {
+    max-width: 20rem;
+  }
+  .work-info__high_light {
+    font-size: 0.875rem;
+  }
+  .work-info__p {
+    font-size: 0.875rem;
+  }
+  .work-info__head {
+    font-size: 1.625rem;
+    margin-bottom: 0.5rem;
+  }
+  .work-info__button {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  .work-info__elements {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .work-info__elements span {
+    font-size: 0.875rem;
+    max-width: 5rem;
+  }
+  .advantage__head h3 {
+    font-size: 1.125rem;
+  }
+  .advantage__head h3 img {
+    max-width: 2.25rem;
+    max-height: 2.8125rem;
+  }
+  .advantage__body {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  .big-text {
+    font-size: 2.25rem;
+  }
+  .inside-input, .inside-textarea {
+    font-size: 0.875rem;
+  }
+  .input-button, .send-mail__button, .fair-price__button {
+    font-size: 0.875rem;
+  }
+  .under-text, .feedback__under_text {
+    font-size: 0.75rem;
+  }
+  .section-head {
+    font-size: 1.125rem;
+  }
+  .feedback__collection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .questions__wrapper_container {
+    padding: 2.5rem 0;
+  }
+  .reviews__container {
+    padding: 2.5rem 0;
+  }
+  .send-mail__container {
+    padding: 2.5rem 0;
+  }
+  .review {
+    width: auto;
+  }
+  .send-mail__form {
+    max-width: 20rem;
+  }
+  .footer__link_small {
+    display: block;
+  }
+  .footer__link_default {
+    display: none;
   }
 }
 
