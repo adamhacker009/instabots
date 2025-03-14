@@ -42,6 +42,17 @@ a
   border: none
   padding: 0.5rem
 
+.user-button
+  padding: 0
+  border: none
+  background-color: white
+  max-height: 2.85714rem
+  max-width: 2.85714rem
+  display: none
+
+.auth-button
+  @extend .generic-button
+
 .page-wrapper
   background-color: white
   border-radius: 1.5rem
@@ -156,6 +167,9 @@ a
 .dark-text
   color: $dark-gray
 
+.white-text
+  color: white
+
 .high-light
   color: $blue
 
@@ -215,12 +229,13 @@ a
   flex-direction: column
   justify-content: space-between
 
-.work-info__elements
-  display: flex
-  max-width: 26.38rem
-  align-items: center
-  gap: 1rem
-  margin-bottom: 1.875rem
+  &__elements
+    display: flex
+    max-width: 26.38rem
+    align-items: center
+    gap: 1rem
+    margin-bottom: 1.875rem
+
 
 .work-info__head
   font-size: 2.25rem
@@ -459,6 +474,10 @@ a
   @extend .question__head
   border-bottom-left-radius: 1rem
   border-bottom-right-radius: 1rem
+  .question__head_wrapper
+    .question__button
+      img
+       transform: rotate(-45deg)
 
 
 .question__button
@@ -729,57 +748,61 @@ a
     .wrapper
       .container
         h3
-          font-size: 1.125rem
+          font-size: 1.2857rem
 
   .reviews__container
     h3
-      font-size: 1.125rem
+      font-size: 1.2857rem
       align-self: center
 
   .fair-price__container
     padding: 2.5rem 0
 
+
   .how-we-work__inside
     h3
-      font-size: 1.125rem
+      font-size: 1.2857rem
 
   .questions__head
     h3
-      font-size: 1.125rem
+      font-size: 1.2857rem
 
   .fair-price__form
-    max-width: 20rem
+    max-width: 22.85714rem
     h3
-      font-size: 2.25rem
+      font-size: 2.57142rem
 
   .work-info
     max-width: 20rem
 
     &__high_light
-      font-size: 0.875rem
+      font-size: 1rem
 
     &__p
-      font-size: 0.875rem
+      font-size: 1rem
 
     &__head
-      font-size: 1.625rem
+      font-size: 1.85714rem
       margin-bottom: 0.5rem
 
     &__button
       width: 100%
-      font-size: 0.875rem
+      font-size: 1rem
 
     &__elements
-      gap: 0.5rem
+      gap: 0.5714rem
       margin-bottom: 1.5rem
 
       span
-        font-size: 0.875rem
-        max-width: 5rem
+        font-size: 1rem
 
+  .decorative-line
+    max-width: 1.142857rem
+    height: 50px
+    color: white
   .advantage__head
     h3
-      font-size: 1.125rem
+      font-size: 1.25rem
       img
         max-width: 2.25rem
         max-height: 2.8125rem
@@ -790,7 +813,7 @@ a
     font-size: 0.875rem
 
   .big-text
-    font-size: 2.25rem
+    font-size: 2.5714rem
 
   .inside-input
     font-size: 0.875rem
@@ -798,34 +821,121 @@ a
   .input-button
     font-size: 0.875rem
 
+  .question
+    &__head
+      &_wrapper
+        h4
+          font-size: 1.85714rem
+    &__body
+      p
+        font-size: 1rem
+    &__button
+      img
+        max-height: 0.7857rem
+        max-width: 0.7857rem
+      padding: 0.5714rem
+
   .under-text
-    font-size: 0.75rem
+    font-size: 0.85714rem
 
   .section-head
-    font-size: 1.125rem
+    font-size: 1.2857rem
 
-  .feedback__collection
-    flex-direction: column
-    align-items: flex-start
-    gap: 1rem
+  .feedback
+    &__collection
+      flex-direction: column
+      align-items: flex-start
+      gap: 1rem
+    &__form
+      h3
+        font-size: 1.85714rem
+      p
+        font-size: 1rem
+    &__input
+      input
+        font-size: 1rem
+    &__area
+        textarea
+          font-size: 1rem
+    &__form_button
+      font-size: 1rem
+      padding: 1.0357rem 1.71428rem
+    &__under_text
+      font-size: 0.85714rem
+      width: 22.85714rem
+    &__container
+      padding: 2.85714rem 0
 
   .questions__wrapper_container
     padding: 2.5rem 0
 
   .reviews__container
-    padding: 2.5rem 0
+    padding: 2.85714rem 0
 
   .send-mail__container
     padding: 2.5rem 0
+
+  .inside-input
+    font-size: 1rem
 
   .review
     width: auto
 
   .send-mail__form
-    max-width: 20rem
+    max-width: 22.85714rem
 
-  .footer__link_small
+  .send-mail__button
+    font-size: 1rem
+
+  .tariff
+    &__head
+      h4
+        font-size: 1.2857rem
+      span
+        font-size: 1.2857rem
+
+    &__feature
+      p
+        font-size: 1rem
+      img
+        max-width: 1.7142rem
+        max-height: 1.7142rem
+
+  .reviewer-info
+    gap: 1.142857rem
+    img
+      max-width: 3.42857rem
+      max-height: 3.42857rem
+
+  .review__head_name
+    font-size: 1.2857rem
+
+  .review__head_data
+    font-size: 1rem
+
+  .review__body > p
+    font-size: 1rem
+
+  .review__rating
+    gap: 0.2857rem
+    img
+      max-width: 1.142857rem
+      max-height: 1.142857rem
+
+  .user-button
     display: block
-
-  .footer__link_default
+  .auth-button
     display: none
+  .footer
+    font-size: 1rem
+    &__left
+      p:nth-child(2)
+        color: $gray
+        margin-top: 0.57142rem
+    &__right
+      align-items: center
+      gap: 0.5714rem
+    &__link_small
+      display: block
+    &__link_default
+      display: none
