@@ -10,40 +10,36 @@
 <body>
     <div class="page-wrapper">
         <header class="header">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="header__wrapper">
-                        <div class="header__button_collection">
-                            <div class="header__burger">
-                                <button class="header__burger_button" id="header__burger_button">
-                                    <img src="./images/svg/Closed.svg" alt="burger" class="image">
-                                </button>
-                            </div>
-                            <a href="" class="high-light">Инстаботы</a>
-                        </div>
-                        <nav class="header__nav">
-                            <a href="">О компании</a>
-                            <a href="">Тарифы</a>
-                            <a href="">Отзывы</a>
-                            <a href="">Q&A</a>
-                            <a href="">Обратная связь</a>
-                        </nav>
-                        <div>
-                            <button class="lang-change">Ru<span class="dark-text">/En</span></button>
-                            <button class="auth-button">Вход и регистрация</button>
-                            <button class="user-button">
-                                <img src="./images/svg/account_icon.svg" alt="account">
+            <div class="wrapper container">
+                <div class="header__wrapper">
+                    <div class="header__button_collection">
+                        <div class="header__burger">
+                            <button class="header__burger_button" id="header__burger_button">
+                                <img src="./images/svg/Closed.svg" alt="burger" class="image">
                             </button>
                         </div>
-
+                        <a href="" class="logo">Инстаботы</a>
+                    </div>
+                    <nav class="header__nav">
+                        <a href="">О компании</a>
+                        <a href="">Тарифы</a>
+                        <a href="">Отзывы</a>
+                        <a href="">Q&A</a>
+                        <a href="">Обратная связь</a>
+                    </nav>
+                    <div>
+                        <button class="lang-change">Ru<span class="lang-change__not_selected">/En</span></button>
+                        <button class="auth-button">Вход и регистрация</button>
+                        <button class="user-button">
+                            <img src="./images/svg/account_icon.svg" alt="account">
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
-        <menu class="header-burger" id="burger-hidden">
+        <div class="header-burger" id="burger-hidden">
             <div class="container-blur">
-                <div class="wrapper">
-                    <div class="container">
+                    <div class="container wrapper">
                         <div class="header-burger__container">
                             <h4 class="header-burger__head">Меню</h4>
                             <nav class="header-burger__nav">
@@ -54,83 +50,69 @@
                                 <a href="">Обратная связь</a>
                             </nav>
                             <div>
-                                <button class="header-burger__lang-change">Ru<span class="dark-text">/En</span></button>
+                                <button class="header-burger__lang-change">Ru<span class="lang-change__not_selected">/En</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </menu>
+        </div>
         <main>
             <section class="send-mail">
                 <div class="container-blur">
-                    <div class="wrapper">
-                        <div class="container">
+                        <div class="container wrapper">
                             <div class="send-mail__container">
                                 <form class="send-mail__form">
                                     <div>
-                                        <h2 class="big-text">
+                                        <h2 class="title">
                                             Высокий уровень вовлечения представителей
                                         </h2>
                                         <div>
                                             <div class="send-mail__input">
                                                 <label for="email"></label>
-                                                <input type="email" id="email" placeholder="Введите свой e-mail" class="inside-input">
-                                                <input type="submit" value="Отправить" class="send-mail__button">
+                                                <input type="email" id="email" placeholder="Введите свой e-mail" class="input">
+                                                <button type="submit" class="send-mail__button">Отправить</button>
                                             </div>
                                             <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
                                         </div>
                                     </div>
-                                    <div class="scroll-next">
+                                    <div class="header__scroll-next">
                                         <img src="./images/svg/Wheeldown.svg" alt="mouse" class="image">
                                         <span>
-                                    Листайте дальше
-                                </span>
+                                            Листайте дальше
+                                        </span>
                                     </div>
                                 </form>
-                                <div>
-                                    <img src="./images/imgs/rocker.png" alt="rocket" class="image">
-                                </div>
+                                <img src="./images/imgs/rocker.png" alt="rocket" class="image">
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="our-advantages">
                 <div class="wrapper">
                     <div class="our-advantages__container">
-                        <div class="our-advantages__head">
-                            <div class="container">
-                                <h3 class="section-head">
-                                    Наши преимущества
-                                </h3>
-                            </div>
+                        <div class="our-advantages__head container">
+                            <h3 class="section-head">
+                                Наши преимущества
+                            </h3>
                         </div>
                         <div class="our-advantages__grid">
                             <div class="advantage">
-                                <div class="advantage__head">
-                                    <h3><img src="images/imgs/emoji1.png">Легко и просто</h3>
-                                </div>
-                                <div class="advantage__body">
-                                    <p>
+                                    <h3 class="advantage__head">
+                                        <img class="advantage__emoji" src="images/imgs/emoji1.png" alt="" />
+                                        Легко и просто
+                                    </h3>
+                                    <p class="advantage__body">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.
                                     </p>
-                                </div>
                             </div>
                             <div class="advantage">
-                                <div class="advantage__head">
-                                    <h3><img src="images/imgs/Emoji.png">Быстро и доступно</h3>
-                                </div>
-                                <div class="advantage__body">
-                                    <p>
+                                    <h3 class="advantage__head"><img class="advantage__emoji" src="images/imgs/Emoji.png">Быстро и доступно</h3>
+                                    <p class="advantage__body">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.
                                     </p>
-                                </div>
                             </div>
                             <div class="advantage">
-                                <div class="advantage__head">
-                                    <h3><img src="images/imgs/Emoji3.png" alt="">А главное, качественно</h3>
-                                </div>
+                                    <h3 class="advantage__head"><img class="advantage__emoji" src="images/imgs/Emoji3.png" alt="">А главное, качественно</h3>
                                 <div class="advantage__body">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.
@@ -143,23 +125,22 @@
             </section>
             <section class="how-we-work">
                 <div class="container-blur">
-                    <div class="wrapper">
-                        <div class="container">
+                        <div class="container wrapper">
                             <div class="how-we-work__inside">
-                                <h3>Как мы работаем</h3>
+                                <h3 class="section-head">Как мы работаем</h3>
                                 <div class="how-we-work__container">
                                     <div>
                                         <img src="./images/imgs/phone.png" alt="phone" class="image">
                                     </div>
                                     <div class="work-info">
+                                        <div class="work-info__elements">
+                                            <span class="high-light">Lorem ipsum</span>
+                                            <div class="decorative-line"></div>
+                                            <span class="work-info__select">Lorem ipsum</span>
+                                            <div class="decorative-line"></div>
+                                            <span class="work-info__select">Lorem ipsum</span>
+                                        </div>
                                         <div>
-                                            <div class="work-info__elements">
-                                                <span class="high-light">Lorem ipsum</span>
-                                                <div class="decorative-line"></div>
-                                                <span class="white-text">Lorem ipsum</span>
-                                                <div class="decorative-line"></div>
-                                                <span class="white-text">Lorem ipsum</span>
-                                            </div>
                                             <h3 class="work-info__head">
                                                 Lorem ipsum dolor sit amet, consectetur.
                                             </h3>
@@ -179,18 +160,17 @@
                                             </button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="our-tariffs">
-                <div class="wrapper">
-                    <div class="container"><h3>
-                        Наши тарифы
-                    </h3></div>
+                    <div class="container wrapper">
+                        <h3 class="section-head">
+                            Наши тарифы
+                        </h3>
+                    </div>
                     <div class="our-tariffs__container">
                         <div class="tariff">
                             <div class="tariff__head">
@@ -301,25 +281,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="reviews">
                 <div class="container-blur">
-                    <div class="wrapper">
-                        <div class="container">
+                        <div class="container wrapper">
                             <div class="reviews__container">
-                                <h3>
+                                <h3 class="reviews__title">
                                     Отзывы
                                 </h3>
                                 <div class="review review4">
-                                    <div class="review__head">
-                                        <div class="review__head_wrapper">
-                                            <div class="reviewer-info">
-                                                <img src="./images/imgs/kot-boris.png" alt="kot1" >
-                                                <p class="review__head_name">Кот Семен</p>
-                                            </div>
-                                            <p class="review__head_data">03.06.2021</p>
+                                    <div class="review__head review__head_wrapper">
+                                        <div class="reviewer-info">
+                                            <img src="./images/imgs/kot-boris.png" alt="kot1" >
+                                            <p class="review__head_name">Кот Семен</p>
                                         </div>
+                                        <p class="review__head_data">03.06.2021</p>
                                     </div>
                                     <div class="review__body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
@@ -402,21 +378,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </section>
             <section class="fair-price">
                 <div class="container-blur">
-                    <div class="wrapper">
-                        <div class="container">
+                        <div class="container wrapper">
                             <div class="fair-price__container">
                                 <img src="./images/imgs/image6.png" alt="img" class="image">
                                 <form class="fair-price__form">
-                                    <h3>Получите самую выгодную цену
-                                        на планете</h3>
+                                    <h3 class="title">
+                                        Получите самую выгодную цену на планете
+                                    </h3>
                                     <div class="fair-price__input">
                                         <label for="email1"></label>
-                                        <input type="email" id="email1" placeholder="Введите свой e-mail" class="inside-input">
+                                        <input type="email" id="email1" placeholder="Введите свой e-mail" class="input">
                                         <input type="submit" value="Отправить" class="fair-price__button">
                                     </div>
                                     <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
@@ -424,90 +399,88 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="questions">
                 <div class="container-blur">
                     <div class="questions__wrapper_container">
                         <div class="container">
                             <div class="questions__head">
-                                <h3>
+                                <h3 class="section-head">
                                     Часто задаваемые вопросы
                                 </h3>
                             </div>
                         </div>
-                            <div class="questions__wrapper">
-                                <div class="question">
-                                    <div class="question__head">
-                                        <div class="question__head_wrapper">
-                                            <h4>Первый вопрос</h4>
-                                            <button class="question__button">
-                                                <img src="./images/svg/cross1.svg" alt="x">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="question__body">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
-                                        </p>
+                        <div class="questions__inner">
+                            <div class="question">
+                                <div class="question__head">
+                                    <div class="question__head_wrapper">
+                                        <h4>Первый вопрос</h4>
+                                        <button class="question__button">
+                                            <img src="./images/svg/cross1.svg" alt="x">
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="question">
-                                    <div class="question__head_closed">
-                                        <div class="question__head_wrapper">
-                                            <h4>Второй вопрос</h4>
-                                            <button class="question__button">
-                                                <img src="./images/svg/cross1.svg" alt="x">
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="question__body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                                    </p>
                                 </div>
-                                <div class="question">
-                                    <div class="question__head_closed">
-                                        <div class="question__head_wrapper">
-                                            <h4>Третий вопрос</h4>
-                                            <button class="question__button">
-                                                <img src="./images/svg/cross1.svg" alt="x">
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="question">
-                                    <div class="question__head_closed">
-                                        <div class="question__head_wrapper">
-                                            <h4>Чёртвый вопрос</h4>
-                                            <button class="question__button">
-                                                <img src="./images/svg/cross1.svg" alt="x">
-                                            </button>
-                                        </div>
+                            </div>
+                            <div class="question">
+                                <div class="question__head_closed">
+                                    <div class="question__head_wrapper">
+                                        <h4>Второй вопрос</h4>
+                                        <button class="question__button">
+                                            <img src="./images/svg/cross1.svg" alt="x">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="question">
+                                <div class="question__head_closed">
+                                    <div class="question__head_wrapper">
+                                        <h4>Третий вопрос</h4>
+                                        <button class="question__button">
+                                            <img src="./images/svg/cross1.svg" alt="x">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="question__head_closed">
+                                    <div class="question__head_wrapper">
+                                        <h4>Четвертый вопрос</h4>
+                                        <button class="question__button">
+                                            <img src="./images/svg/cross1.svg" alt="x">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="feedback">
                 <div class="container-blur">
-                    <div class="wrapper">
-                        <div class="container">
+                        <div class="container wrapper">
                             <div class="feedback__container">
                                 <form class="feedback__form">
                                     <h3>Обратная связь</h3>
 
-                                    <p>Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за месяц с минимальными усилиями с вашей стороны</p>
+                                    <p class="general-text">Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой аудитории за месяц с минимальными усилиями с вашей стороны</p>
 
                                     <div class="feedback__inputs">
                                         <div class="feedback__input">
                                             <label for="email2"></label>
-                                            <input type="email" id="email2" placeholder="Введите свой e-mail" class="inside-input">
+                                            <input type="email" id="email2" placeholder="Введите свой e-mail" class="input">
                                         </div>
                                         <div class="feedback__input">
                                             <label for="tel"></label>
-                                            <input type="tel" id="tel" placeholder="Номер мобильного телефона" class="inside-input">
+                                            <input type="tel" id="tel" placeholder="Номер мобильного телефона" class="input">
                                         </div>
                                         <div class="feedback__input">
                                             <label for="instagram"></label>
-                                            <input type="text" id="instagram" placeholder="Никнейм в Instagram" class="inside-input">
+                                            <input type="text" id="instagram" placeholder="Никнейм в Instagram" class="input">
                                         </div>
                                         <div class="feedback__area">
                                             <label for="message"></label>
@@ -520,16 +493,14 @@
                                         <p class="feedback__under_text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
                                     </div>
                                 </form>
-                                <div class="feedback__image"><img src="images/imgs/Picture.png" alt="picture" class="image"></div>
+                                <img src="images/imgs/Picture.png" alt="picture" class="image feedback__image">
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="wrapper">
-                <div class="container">
+                <div class="container wrapper">
                     <div class="footer__container">
                         <div class="footer__left">
                             <p>Инстаботы</p>
@@ -542,7 +513,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </footer>
     </div>
 </body>
