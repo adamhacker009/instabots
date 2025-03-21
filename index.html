@@ -11,10 +11,10 @@
     <div class="page-wrapper">
         <header class="header">
             <div class="wrapper container">
-                <div class="header__wrapper">
-                    <div class="header__button_collection">
+                <div class="header__inner">
+                    <div class="header__logo-buttons">
                         <div class="header__burger">
-                            <button class="header__burger_button" id="header__burger_button">
+                            <button class="header__burger-button">
                                 <img src="./images/svg/Closed.svg" alt="burger" class="image">
                             </button>
                         </div>
@@ -59,37 +59,39 @@
         <main>
             <section class="send-mail">
                 <div class="container-blur">
-                        <div class="container wrapper">
-                            <div class="send-mail__container">
-                                <form class="send-mail__form">
+                    <div class="container wrapper">
+                        <div class="send-mail__inner">
+                            <form class="send-mail__form">
+                                <div>
+                                    <h2 class="title">
+                                        Высокий уровень вовлечения представителей
+                                    </h2>
                                     <div>
-                                        <h2 class="title">
-                                            Высокий уровень вовлечения представителей
-                                        </h2>
-                                        <div>
-                                            <div class="send-mail__input">
-                                                <label for="email"></label>
-                                                <input type="email" id="email" placeholder="Введите свой e-mail" class="input">
-                                                <button type="submit" class="send-mail__button">Отправить</button>
-                                            </div>
-                                            <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
+                                        <div class="send-mail__input">
+                                            <label for="email"></label>
+                                            <input type="email" id="email" placeholder="Введите свой e-mail" class="input">
+                                            <button type="submit" class="send-mail__button">Отправить</button>
                                         </div>
+                                        <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
                                     </div>
-                                    <div class="header__scroll-next">
-                                        <img src="./images/svg/Wheeldown.svg" alt="mouse" class="image">
-                                        <span>
-                                            Листайте дальше
-                                        </span>
-                                    </div>
-                                </form>
+                                </div>
+                                <div class="header__scroll-next">
+                                    <img src="./images/svg/Wheeldown.svg" alt="mouse" class="image">
+                                    <span>
+                                        Листайте дальше
+                                    </span>
+                                </div>
+                            </form>
+                            <div>
                                 <img src="./images/imgs/rocker.png" alt="rocket" class="image">
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <section class="our-advantages">
                 <div class="wrapper">
-                    <div class="our-advantages__container">
+                    <div class="our-advantages__inner">
                         <div class="our-advantages__head container">
                             <h3 class="section-head">
                                 Наши преимущества
@@ -113,11 +115,11 @@
                             </div>
                             <div class="advantage">
                                     <h3 class="advantage__head"><img class="advantage__emoji" src="images/imgs/Emoji3.png" alt="">А главное, качественно</h3>
-                                <div class="advantage__body">
-                                    <p>
+
+                                    <p class="advantage__body">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.
                                     </p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -126,32 +128,32 @@
             <section class="how-we-work">
                 <div class="container-blur">
                         <div class="container wrapper">
-                            <div class="how-we-work__inside">
+                            <div class="how-we-work__inner">
                                 <h3 class="section-head">Как мы работаем</h3>
-                                <div class="how-we-work__container">
+                                <div class="how-we-work__content">
                                     <div>
                                         <img src="./images/imgs/phone.png" alt="phone" class="image">
                                     </div>
                                     <div class="work-info">
                                         <div class="work-info__elements">
-                                            <span class="high-light">Lorem ipsum</span>
+                                            <button disabled class="work-info__select_high-light">Lorem ipsum</button>
                                             <div class="decorative-line"></div>
-                                            <span class="work-info__select">Lorem ipsum</span>
+                                            <button class="work-info__select">Lorem ipsum</button>
                                             <div class="decorative-line"></div>
-                                            <span class="work-info__select">Lorem ipsum</span>
+                                            <button class="work-info__select">Lorem ipsum</button>
                                         </div>
-                                        <div>
+                                        <div class="how-we-work__slide-1">
                                             <h3 class="work-info__head">
                                                 Lorem ipsum dolor sit amet, consectetur.
                                             </h3>
-                                            <p class="work-info__high_light">
+                                            <p class="work-info__high-light">
                                                 Semper sollicitudin ut cursus nunc eu ultricies.
                                             </p>
                                             <div>
-                                                <p class="work-info__p">
+                                                <p class="work-info__text-content">
                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet.
                                                 </p>
-                                                <p class="work-info__p">Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.</p>
+                                                <p class="work-info__text-content">Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.</p>
                                             </div>
                                         </div>
                                         <div>
@@ -171,11 +173,11 @@
                             Наши тарифы
                         </h3>
                     </div>
-                    <div class="our-tariffs__container">
+                    <div class="our-tariffs__inner">
                         <div class="tariff">
                             <div class="tariff__head">
-                                <h4>Эконом</h4>
-                                <span><span class="high-light">2 990 руб</span>/месяц</span>
+                                <h4 class="tariff__head-title">Эконом</h4>
+                                <span class="tariff__head-price"><span class="high-light">2 990 руб</span>/месяц</span>
                             </div>
                             <div class="tariff__body">
                                 <div class="tariff__features">
@@ -201,8 +203,8 @@
                         </div>
                         <div class="tariff">
                             <div class="tariff__head">
-                                <h4>Стандарт</h4>
-                                <span><span class="high-light">4 990 руб</span>/месяц</span>
+                                <h4 class="tariff__head-title">Стандарт</h4>
+                                <span class="tariff__head-price"><span class="high-light">4 990 руб</span>/месяц</span>
                             </div>
                             <div class="tariff__body">
                                 <div class="tariff__features">
@@ -228,8 +230,8 @@
                         </div>
                         <div class="tariff">
                             <div class="tariff__head">
-                                <h4>Экстра</h4>
-                                <span><span class="high-light">8 900 руб</span>/месяц</span>
+                                <h4 class="tariff__head-title">Экстра</h4>
+                                <span class="tariff__head-price"><span class="high-light">8 900 руб</span>/месяц</span>
                             </div>
                             <div class="tariff__body">
                                 <div class="tariff__features">
@@ -255,8 +257,8 @@
                         </div>
                         <div class="tariff">
                             <div class="tariff__head">
-                                <h4>Эконом</h4>
-                                <span><span class="high-light">12 900 руб</span>/месяц</span>
+                                <h4 class="tariff__head-title">Эконом</h4>
+                                <span class="tariff__head-price"><span class="high-light">12 900 руб</span>/месяц</span>
                             </div>
                             <div class="tariff__body">
                                 <div class="tariff__features">
@@ -285,38 +287,17 @@
             <section class="reviews">
                 <div class="container-blur">
                         <div class="container wrapper">
-                            <div class="reviews__container">
+                            <div class="reviews__inner">
                                 <h3 class="reviews__title">
                                     Отзывы
                                 </h3>
-                                <div class="review review4">
-                                    <div class="review__head review__head_wrapper">
+                                <div class="review review1">
+                                    <div class="review__head review__head-wrapper">
                                         <div class="reviewer-info">
                                             <img src="./images/imgs/kot-boris.png" alt="kot1" >
-                                            <p class="review__head_name">Кот Семен</p>
+                                            <p class="review__head-name">Кот Семен 1</p>
                                         </div>
-                                        <p class="review__head_data">03.06.2021</p>
-                                    </div>
-                                    <div class="review__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
-                                        <div class="review__rating">
-                                            <img src="./images/svg/Active.svg" alt="active">
-                                            <img src="./images/svg/Active.svg" alt="active">
-                                            <img src="./images/svg/Active.svg" alt="active">
-                                            <img src="./images/svg/Active.svg" alt="active">
-                                            <img src="./images/svg/Active.svg" alt="active">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="review review3">
-                                    <div class="review__head">
-                                        <div class="review__head_wrapper">
-                                            <div class="reviewer-info">
-                                                <img src="./images/imgs/kot-boris.png" alt="kot1">
-                                                <p class="review__head_name">Кот Семен</p>
-                                            </div>
-                                            <p class="review__head_data">03.06.2021</p>
-                                        </div>
+                                        <p class="review__head-date">03.06.2021</p>
                                     </div>
                                     <div class="review__body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
@@ -331,12 +312,12 @@
                                 </div>
                                 <div class="review review2">
                                     <div class="review__head">
-                                        <div class="review__head_wrapper">
+                                        <div class="review__head-wrapper">
                                             <div class="reviewer-info">
                                                 <img src="./images/imgs/kot-boris.png" alt="kot1">
-                                                <p class="review__head_name">Кот Семен</p>
+                                                <p class="review__head-name">Кот Семен 2</p>
                                             </div>
-                                            <p class="review__head_data">03.06.2021</p>
+                                            <p class="review__head-date">03.06.2021</p>
                                         </div>
                                     </div>
                                     <div class="review__body">
@@ -350,14 +331,35 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="review review1">
+                                <div class="review review3">
                                     <div class="review__head">
-                                        <div class="review__head_wrapper">
+                                        <div class="review__head-wrapper">
                                             <div class="reviewer-info">
                                                 <img src="./images/imgs/kot-boris.png" alt="kot1">
-                                                <p class="review__head_name">Кот Семен</p>
+                                                <p class="review__head-name">Кот Семен 3</p>
                                             </div>
-                                            <p class="review__head_data">03.06.2021</p>
+                                            <p class="review__head-date">03.06.2021</p>
+                                        </div>
+                                    </div>
+                                    <div class="review__body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                                        <div class="review__rating">
+                                            <img src="./images/svg/Active.svg" alt="active">
+                                            <img src="./images/svg/Active.svg" alt="active">
+                                            <img src="./images/svg/Active.svg" alt="active">
+                                            <img src="./images/svg/Active.svg" alt="active">
+                                            <img src="./images/svg/Active.svg" alt="active">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review review4">
+                                    <div class="review__head">
+                                        <div class="review__head-wrapper">
+                                            <div class="reviewer-info">
+                                                <img src="./images/imgs/kot-boris.png" alt="kot1">
+                                                <p class="review__head-name">Кот Семен 4</p>
+                                            </div>
+                                            <p class="review__head-date">03.06.2021</p>
                                         </div>
                                     </div>
                                     <div class="review__body">
@@ -382,27 +384,28 @@
             </section>
             <section class="fair-price">
                 <div class="container-blur">
-                        <div class="container wrapper">
-                            <div class="fair-price__container">
-                                <img src="./images/imgs/image6.png" alt="img" class="image">
-                                <form class="fair-price__form">
-                                    <h3 class="title">
-                                        Получите самую выгодную цену на планете
-                                    </h3>
-                                    <div class="fair-price__input">
-                                        <label for="email1"></label>
+                    <div class="container wrapper">
+                        <div class="fair-price__container">
+                            <img src="./images/imgs/image6.png" alt="img" class="image">
+                            <form class="fair-price__form">
+                                <h3 class="title">
+                                    Получите самую выгодную цену на планете
+                                </h3>
+                                <div class="fair-price__input">
+                                    <label>
                                         <input type="email" id="email1" placeholder="Введите свой e-mail" class="input">
-                                        <input type="submit" value="Отправить" class="fair-price__button">
-                                    </div>
-                                    <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
-                                </form>
-                            </div>
+                                    </label>
+                                    <input type="submit" value="Отправить" class="fair-price__button">
+                                </div>
+                                <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
+                            </form>
                         </div>
                     </div>
+                </div>
             </section>
             <section class="questions">
                 <div class="container-blur">
-                    <div class="questions__wrapper_container">
+                    <div class="questions__wrapper-container">
                         <div class="container">
                             <div class="questions__head">
                                 <h3 class="section-head">
@@ -411,49 +414,64 @@
                             </div>
                         </div>
                         <div class="questions__inner">
-                            <div class="question">
-                                <div class="question__head">
-                                    <div class="question__head_wrapper">
-                                        <h4>Первый вопрос</h4>
-                                        <button class="question__button">
+                            <div class="question question1">
+                                <div class="question__head-closed">
+                                    <div class="question__head-wrapper">
+                                        <h4 class="question__title">Первый вопрос</h4>
+                                        <button class="question__button-closed">
                                             <img src="./images/svg/cross1.svg" alt="x">
                                         </button>
                                     </div>
                                 </div>
                                 <div class="question__body">
-                                    <p>
+                                    <p class="general-text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
                                     </p>
                                 </div>
                             </div>
-                            <div class="question">
-                                <div class="question__head_closed">
-                                    <div class="question__head_wrapper">
-                                        <h4>Второй вопрос</h4>
-                                        <button class="question__button">
+                            <div class="question question2">
+                                <div class="question__head-closed">
+                                    <div class="question__head-wrapper">
+                                        <h4 class="question__title">Второй вопрос</h4>
+                                        <button class="question__button-closed">
                                             <img src="./images/svg/cross1.svg" alt="x">
                                         </button>
                                     </div>
                                 </div>
+                                <div class="question__body">
+                                    <p class="general-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="question">
-                                <div class="question__head_closed">
-                                    <div class="question__head_wrapper">
-                                        <h4>Третий вопрос</h4>
-                                        <button class="question__button">
+                            <div class="question question3">
+                                <div class="question__head-closed">
+                                    <div class="question__head-wrapper">
+                                        <h4 class="question__title">Третий вопрос</h4>
+                                        <button class="question__button-closed">
                                             <img src="./images/svg/cross1.svg" alt="x">
                                         </button>
                                     </div>
                                 </div>
+                                <div class="question__body">
+                                    <p class="general-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="question">
-                                <div class="question__head_closed">
-                                    <div class="question__head_wrapper">
-                                        <h4>Четвертый вопрос</h4>
-                                        <button class="question__button">
+                            <div class="question question4">
+                                <div class="question__head-closed">
+                                    <div class="question__head-wrapper">
+                                        <h4 class="question__title">Четвертый вопрос</h4>
+                                        <button class="question__button-closed">
                                             <img src="./images/svg/cross1.svg" alt="x">
                                         </button>
                                     </div>
+                                </div>
+                                <div class="question__body">
+                                    <p class="general-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +481,7 @@
             <section class="feedback">
                 <div class="container-blur">
                         <div class="container wrapper">
-                            <div class="feedback__container">
+                            <div class="feedback__inner">
                                 <form class="feedback__form">
                                     <h3>Обратная связь</h3>
 
@@ -484,7 +502,7 @@
                                         </div>
                                         <div class="feedback__area">
                                             <label for="message"></label>
-                                            <textarea id="message" placeholder="Что вы бы хотели спросить о росте в Instagram" class="inside-textarea"></textarea>
+                                            <textarea id="message" placeholder="Что вы бы хотели спросить о росте в Instagram" class="textarea"></textarea>
                                         </div>
                                     </div>
 
@@ -502,11 +520,11 @@
         <footer class="footer">
                 <div class="container wrapper">
                     <div class="footer__container">
-                        <div class="footer__left">
+                        <div class="footer__content">
                             <p>Инстаботы</p>
                             <p>© 2021 Copyright reserved Instabots</p>
                         </div>
-                        <div class="footer__right">
+                        <div class="footer__nav">
                             <a href="" class="footer__link_default">Вернуться наверх</a>
                             <a href="" class="footer__link_small">Наверх</a>
                             <img src="./images/svg/Arrow.svg" alt="arrow">
