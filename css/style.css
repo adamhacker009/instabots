@@ -32,6 +32,10 @@ a {
   line-height: 135%;
 }
 
+section {
+  transition-duration: 0.2s;
+}
+
 .header {
   font-size: 1.125rem;
   background-color: white;
@@ -39,6 +43,7 @@ a {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   z-index: 1;
+  transition-duration: 0.2s;
 }
 .header__inner {
   display: flex;
@@ -422,8 +427,8 @@ a {
 }
 .tariff__head {
   padding: 1.25rem 0 1.25rem 1.5rem;
-  padding-background-color: white;
-  padding-border-radius: 1rem 1rem 0 0;
+  background-color: white;
+  border-radius: 1rem 1rem 0 0;
 }
 .tariff__head-title {
   font-size: 1.5rem;
@@ -621,6 +626,9 @@ a {
   display: flex;
   align-items: center;
 }
+.fair-price__container .image {
+  transition-duration: 0.9s;
+}
 
 .fair-price__input {
   position: relative;
@@ -746,6 +754,7 @@ a {
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   color: white;
+  transition-duration: 0.2s;
 }
 .footer__container {
   display: flex;
