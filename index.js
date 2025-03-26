@@ -5,7 +5,7 @@ answer.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mas
 
 
 window.onload = () => {
-    // $('.header__burger_button').firstElementChild.addEventListener('click', function(){
+    // $('.header__burger_button').addEventListener('click', function(){
     //     if($("#burger-hidden")){
     //         $("#burger-hidden").id = 'burger-show'
     //         $("main").style.display = 'none'
@@ -16,7 +16,9 @@ window.onload = () => {
     //         $(".footer").style.display = "block"
     //     }
     // })
+	const advantages = document.querySelectorAll('.advantage')
     const reviews = document.querySelectorAll('.review');
+	const workInfo = document.querySelectorAll('.work-info__select')
     reviews.forEach(review => {
         review.addEventListener('click', function(){
             const review1 = $('.review1');
@@ -29,6 +31,54 @@ window.onload = () => {
             review4.className = 'review review1'
         })
     })
+	
+	workInfo.forEach((selector, id) =>{
+		selector.addEventListener('click', function(){
+			switch(id){
+				case 0:
+					$(".how-we-work__slide-1").style.transform='translateX(0)'
+					$(".how-we-work__slide-2").style.transform='translateX(-100%)'
+					$(".how-we-work__slide-3").style.transform='translateX(-100%)'
+				break
+				case 1:
+					$(".how-we-work__slide-1").style.transform='translateX(-100%)'
+					$(".how-we-work__slide-2").style.transform='translateX(0)'
+					$(".how-we-work__slide-3").style.transform='translateX(-100%)'
+				break
+				case 2:
+					$(".how-we-work__slide-1").style.transform='translateX(-100%)'
+					$(".how-we-work__slide-2").style.transform='translateX(-100%)'
+					$(".how-we-work__slide-3").style.transform='translateX(0)'
+				break		
+			}
+			workInfo.forEach(elem => {
+				elem.className = 'work-info__select'
+				elem.disabled = ''
+			})
+			selector.className = 'work-info__select work-info__select_high-light'
+			selector.disabled = 'disabled'
+		})
+	})
+	
+	advantages[0].querySelector('.advantage__emoji').addEventListener('mouseover', function(){
+		advantages[0].querySelector('.advantage__emoji').src='./images/imgs/nerd-gif.gif'
+	})
+	advantages[0].querySelector('.advantage__emoji').addEventListener('mouseout', function(){
+		advantages[0].querySelector('.advantage__emoji').src='./images/imgs/emoji1.png'
+	})
+	advantages[1].querySelector('.advantage__emoji').addEventListener('mouseover', function(){
+		advantages[1].querySelector('.advantage__emoji').src='./images/imgs/bueww-gif.gif'
+	})
+	advantages[1].querySelector('.advantage__emoji').addEventListener('mouseout', function(){
+		advantages[1].querySelector('.advantage__emoji').src='./images/imgs/Emoji.png'
+	})
+	advantages[2].querySelector('.advantage__emoji').addEventListener('mouseover', function(){
+		advantages[2].querySelector('.advantage__emoji').src='./images/imgs/cool-gif.gif'
+	})
+	advantages[2].querySelector('.advantage__emoji').addEventListener('mouseout', function(){
+		advantages[2].querySelector('.advantage__emoji').src='./images/imgs/Emoji3.png'
+	})
+	
     document.querySelectorAll('.question').forEach(review => {
         review.addEventListener('click', function(){
             if (review.querySelector('.question__head-closed')){
@@ -45,5 +95,45 @@ window.onload = () => {
                 review.querySelector('.question__head').className = 'question__head-closed'
             }
         })
+		review.addEventListener('mouseover', function(){
+			if (review.querySelector('.question__head-closed')){
+				review.querySelector('.question__button-closed').style.transform='rotate(0)'
+			}
+		})
+		review.addEventListener('mouseout', function(){
+			if (review.querySelector('.question__head-closed')){
+				review.querySelector('.question__button-closed').style.transform='rotate(-45deg)'
+			}
+		})
+    })
+	
+	
+	
+	
+    $('.reviews__button').addEventListener('click', function(){
+        const reviews = document.querySelectorAll('.review')
+        reviews.forEach(review =>{
+            review.style.opacity = '0'
+        })
+        
+        setTimeout(function (){
+			const reviews__inner = $('.reviews__inner')
+            reviews__inner.style.display='grid'
+			reviews__inner.style.gridTemplateColumns = '1fr 1fr'
+			reviews__inner.style.gridTemplateRows = '1fr 2fr 2fr 1fr'
+			reviews__inner.style.gap = '1.5rem'
+			$('.reviews__button').style.display = 'none'
+			
+			reviews.forEach(review => {
+				review.style.transition = 'opacity 0.5s ease'
+                review.style.transform = 'translateX(0)'
+                review.style.position = 'static'
+                review.style.opacity = '100%'
+            })
+			
+            $('.reviews__button_pos').style.justifyContent ='center'
+            $('.reviews__button_pos').style.alignItems = 'center'
+            $('.reviews__cats-structured').style.opacity='100'
+        }, 500)
     })
 }

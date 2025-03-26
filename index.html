@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+	<link rel='stylesheet' href='./css/temp_css.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./index.js"></script>
     <title>123</title>
@@ -27,8 +28,8 @@
                         <a href="">Q&A</a>
                         <a href="">Обратная связь</a>
                     </nav>
-                    <div>
-                        <button class="lang-change">Ru<span class="lang-change__not_selected">/En</span></button>
+                    <div class="header__menu-buttons">
+                        <button class="lang-change"><span class="lang-change__lang">Ru</span>/<span class="lang-change__lang lang-change__not_selected">En</span></button>
                         <button class="auth-button">Вход и регистрация</button>
                         <button class="user-button">
                             <img src="./images/svg/account_icon.svg" alt="account">
@@ -50,7 +51,7 @@
                                 <a href="">Обратная связь</a>
                             </nav>
                             <div>
-                                <button class="header-burger__lang-change">Ru<span class="lang-change__not_selected">/En</span></button>
+                                <button class="header-burger__lang-change"><span class="lang-change__lang">Ru</span>/<span class="lang-change__lang lang-change__not_selected">En</span></button>
                             </div>
                         </div>
                     </div>
@@ -75,12 +76,12 @@
                                         <p class="under-text">Нажимая на кнопку вы соглашаетесь на обработку <a href="" class="high-light">персональных данных</a></p>
                                     </div>
                                 </div>
-                                <div class="header__scroll-next">
+                                <a href="#our-advantages" class="header__scroll-next">
                                     <img src="./images/svg/Wheeldown.svg" alt="mouse" class="image">
                                     <span>
                                         Листайте дальше
                                     </span>
-                                </div>
+                                </a>
                             </form>
                             <div>
                                 <img src="./images/imgs/rocker.png" alt="rocket" class="image">
@@ -89,7 +90,7 @@
                     </div>
                 </div>
             </section>
-            <section class="our-advantages">
+            <section class="our-advantages" id='our-advantages'>
                 <div class="wrapper">
                     <div class="our-advantages__inner">
                         <div class="our-advantages__head container">
@@ -136,13 +137,41 @@
                                     </div>
                                     <div class="work-info">
                                         <div class="work-info__elements">
-                                            <button disabled class="work-info__select_high-light">Lorem ipsum</button>
+                                            <button disabled class="work-info__select work-info__select_high-light">Lorem ipsum</button>
                                             <div class="decorative-line"></div>
                                             <button class="work-info__select">Lorem ipsum</button>
                                             <div class="decorative-line"></div>
                                             <button class="work-info__select">Lorem ipsum</button>
                                         </div>
                                         <div class="how-we-work__slide-1">
+                                            <h3 class="work-info__head">
+                                                Lorem ipsum dolor sit amet, consectetur.
+                                            </h3>
+                                            <p class="work-info__high-light">
+                                                Semper sollicitudin ut cursus nunc eu ultricies.
+                                            </p>
+                                            <div>
+                                                <p class="work-info__text-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet.
+                                                </p>
+                                                <p class="work-info__text-content">Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.</p>
+                                            </div>
+                                        </div>
+										<div class="how-we-work__slide-2">
+                                            <h3 class="work-info__head">
+                                                Lorem ipsum dolor sit amet, consectetur.
+                                            </h3>
+                                            <p class="work-info__high-light">
+                                                Semper sollicitudin ut cursus nunc eu ultricies.
+                                            </p>
+                                            <div>
+                                                <p class="work-info__text-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam. Tristique orci, ornare sit vel amet.
+                                                </p>
+                                                <p class="work-info__text-content">Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.</p>
+                                            </div>
+                                        </div>
+										<div class="how-we-work__slide-3">
                                             <h3 class="work-info__head">
                                                 Lorem ipsum dolor sit amet, consectetur.
                                             </h3>
@@ -300,7 +329,7 @@
                                         <p class="review__head-date">03.06.2021</p>
                                     </div>
                                     <div class="review__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                                        <p class='general-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
                                         <div class="review__rating">
                                             <img src="./images/svg/Active.svg" alt="active">
                                             <img src="./images/svg/Active.svg" alt="active">
@@ -321,7 +350,7 @@
                                         </div>
                                     </div>
                                     <div class="review__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                                        <p class='general-text'>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
                                         <div class="review__rating">
                                             <img src="./images/svg/Active.svg" alt="active">
                                             <img src="./images/svg/Active.svg" alt="active">
@@ -342,7 +371,7 @@
                                         </div>
                                     </div>
                                     <div class="review__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                                        <p class='general-text'>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
                                         <div class="review__rating">
                                             <img src="./images/svg/Active.svg" alt="active">
                                             <img src="./images/svg/Active.svg" alt="active">
@@ -363,7 +392,7 @@
                                         </div>
                                     </div>
                                     <div class="review__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
+                                        <p class='general-text'>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet porttitor. Congue arcu turpis est, aliquet porttitor.</p>
                                         <div class="review__rating">
                                             <img src="./images/svg/Active.svg" alt="active">
                                             <img src="./images/svg/Active.svg" alt="active">
@@ -375,6 +404,7 @@
                                 </div>
                                 <div class="reviews__button_pos">
                                     <div>
+                                        <p class="reviews__cats-structured">Котики структурированы</p>
                                         <button class="reviews__button">Структурировать котиков</button>
                                     </div>
                                 </div>
@@ -527,7 +557,7 @@
                         <div class="footer__nav">
                             <a href="" class="footer__link_default">Вернуться наверх</a>
                             <a href="" class="footer__link_small">Наверх</a>
-                            <img src="./images/svg/Arrow.svg" alt="arrow">
+                            <img class="image" src="./images/svg/Arrow.svg" alt="arrow">
                         </div>
                     </div>
                 </div>

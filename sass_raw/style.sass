@@ -59,8 +59,18 @@ a
     align-items: center
     gap: 0.5rem
     color: white
+    span
+      transition-duration: 0.3s
+    .image
+      transition-duration: 0.3s
+    &:hover
+      color: #4754EB
+      .image
+        content: url("../images/svg/Wheeldown_blue.svg")
   &-burger__lang-change
     @extend .lang-change
+  &__menu-buttons
+    display: flex
 
 .footer__link_small
   display: none
@@ -75,6 +85,8 @@ a
 
 .auth-button
   @extend .button
+  &:hover
+    padding: 0.625rem 1.5rem 0.875rem
 
 .page-wrapper
   background-color: white
@@ -103,6 +115,12 @@ a
   padding: 1.25rem 1rem
   background-color: rgba(255, 255, 255, 0.5)
   border-radius: 1rem
+  transition-duration: 0.5s
+  &:focus
+    border: #4754EB
+  &:hover::placeholder
+    color: #4754EB
+    transition: 0.3s
 
   &__input
     padding: 1rem 1.25rem
@@ -127,6 +145,10 @@ a
   justify-content: space-between
   width: 31.32rem
   color: $dark-gray
+  a
+    transition-duration: 0.3s
+    &:hover
+      color: #4754EB
 
 .send-mail__form
   gap: 7.875rem
@@ -164,6 +186,9 @@ a
   background-color: rgba(0, 0, 0, 0.0)
   color: white
   border: none
+  transition-duration: 0.2s
+  &:hover
+    color: #4754EB
 
 .work-info__select_high-light
   background-color: rgba(0, 0, 0, 0.0)
@@ -179,6 +204,9 @@ a
 .advantage
   border-radius: 1.5rem
   filter: drop-shadow(0px 0px 20px rgba(25, 25, 25, 0.05))
+  transition-duration: 0.5s
+  &:hover
+    filter: drop-shadow(0.528rem 0.528rem 1rem #808080)
   &__head
     font-size: 1.5rem
     padding: 0.75rem 0 0.75rem 0.5rem
@@ -189,6 +217,9 @@ a
     color: black
   &__emoji
     margin-right: 0.75rem
+    max-width: 3.562rem
+    max-height: 3.562rem
+    transition-duration: 0.5s
   &__body
     background-color: #fdfdfd
     border-radius: 0 0 1.5rem 1.5rem
@@ -209,9 +240,35 @@ a
     gap: 1.5rem
   &__inner
     padding: 5rem 0
+  &__slide-
+    &1
+      max-width: 28.937rem
+      position: absolute
+      top: 1.875rem
+      transition-duration: 0.5s
+      transform: translateX(0)
+    &2
+      max-width: 28.937rem
+      position: absolute
+      top: 1.875rem
+      transition-duration: 0.5s
+      transform: translateX(-100%)
+    &3
+      max-width: 28.937rem
+      position: absolute
+      top: 1.875rem
+      transition-duration: 0.5s
+      transform: translateX(-100%)
 
 .work-info
   max-width: 28.94rem
+  overflow: hidden
+  position: relative
+  min-height: 31.812rem
+  min-width: 32.625rem
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
   &__elements
     display: flex
@@ -236,6 +293,11 @@ a
     @extend .button
     font-size: 1.125rem
     margin-top: 2.531rem
+    &:hover
+      padding: 0.625rem 1.5rem 0.875rem
+    &:active
+      background-color: #2F3BB7
+      padding: 0.75rem 1.5rem
 
 .decorative-line
   background-color: white
@@ -258,6 +320,12 @@ a
   position: absolute
   top: 0.5rem
   right: 0.5rem
+  transition-duration: 0.3s
+  &:hover
+    padding: 0.625rem 1.5rem 0.875rem
+  &:active
+    padding: 0.75rem 1.5rem
+    color: #2F3BB7
 
 .our-tariffs
   padding: 5rem 0 5.5rem
@@ -268,6 +336,10 @@ a
   filter: drop-shadow(0 0 0.31rem $gray)
   max-width: 21.25rem
   min-width: 16.88rem
+  transition-duration: 0.5s
+  &:hover
+    filter: drop-shadow(0 0.25rem 2rem #808080)
+    max-height: 35rem
 
   &__body
     background-color: $gray
@@ -294,6 +366,8 @@ a
     font-weight: bold
   &__head
     padding: 1.25rem 0 1.25rem 1.5rem
+      background-color: white
+      border-radius: 1rem 1rem 0 0
     &-title
       font-size: 1.5rem
       margin-bottom: 0.5rem
@@ -304,6 +378,11 @@ a
 .reviews
   background-image: url("../images/svg/3Screen.svg")
   background-size: cover
+  &__cats-structured
+    color: $dark-gray
+    font-size: 1.5rem
+    opacity: 0
+    transition-duration: 0.4s
   &__inner
     position: relative
     display: flex
@@ -318,11 +397,17 @@ a
     @extend .button-alt
     font-weight: bold
     font-size: 1.125rem
+    &:hover
+      padding: 0.625rem 1.5rem 0.875rem
+    &:active
+      color: #2F3BB7
+      padding: 0.75rem 1.5rem
 
 
   &__button_pos
     display: flex
     justify-content: flex-end
+    grid-area: 4 / 1 / 5 / 3
 
 .review
   position: absolute
@@ -330,6 +415,7 @@ a
   border-radius: 1.25rem
   border: 1px solid rgba(255, 255, 255, 0.5)
   transition-duration: 0.5s
+  filter: drop-shadow(0 0.85rem 1rem #808080)
   &__head
     background-color: white
     border-top-left-radius: 1rem
@@ -354,15 +440,18 @@ a
     transform: translateX(-50%)
     top: 15%
     left: 50%
+    grid-area: 2/1
     z-index: 4
   &2
     left: 0%
     top: 23%
+    grid-area: 2/2
     z-index: 3
   &3
     transform: translateX(-50%)
     top: 55%
     left: 46%
+    grid-area: 3/1
     animation-duration: 10s
     animation-name: review1
     animation-iteration-count: infinite
@@ -370,6 +459,7 @@ a
   &4
     top: 38%
     right: 0%
+    grid-area: 3/2
     z-index: 1
   &__rating
     margin-top: 1rem
@@ -455,6 +545,11 @@ a
   @extend .send-mail__button
   color: white
   background-color: $blue
+  &:hover
+    padding: 0.625rem 1.5rem 0.875rem
+  &:active
+    padding: 0.75rem 1.5rem
+    background-color: #2F3BB7
 
 
 .our-tariffs__inner
@@ -501,6 +596,11 @@ a
   color: #808080
   font-size: 1.125rem
   border-radius: 1.5rem
+  transition-duration: 0.5s
+  &:focus
+    border: #4754EB
+  &:hover::placeholder
+    color: #4754EB
 
 .feedback__area
   background-color: $gray
@@ -534,6 +634,11 @@ a
   padding: 1rem 1.5rem
   font-size: 1.125rem
   font-weight: bold
+  &:hover
+    padding: 0.625rem 1.5rem 0.875rem
+  &:active
+    padding: 0.75rem 1.5rem
+    background-color: #2F3BB7
 
 .footer
   background-color: $blue
@@ -550,6 +655,17 @@ a
   &__nav
     display: flex
     gap: 0.5rem
+    a
+      align-self: flex-end
+      transition-duration: 0.5s
+    img
+      transition-duration: 0.5s
+    &:hover
+      .image
+        content: url("../images/svg/Arrow_gray.svg")
+      a
+        color: #D9D9D9
+        align-self: flex-end
 
 .fair-price__form
   max-width: 28.5rem
@@ -567,9 +683,11 @@ a
   border-radius: 1rem
   border: none
   font-size: 1.125rem
+  transition-duration: 0.3s
 
 .image
   max-width: 100%
+  transition-duration: 0.5s
 
 .button-alt
   @extend .button

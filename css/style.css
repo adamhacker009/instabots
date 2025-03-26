@@ -64,6 +64,22 @@ a {
   gap: 0.5rem;
   color: white;
 }
+.header__scroll-next span {
+  transition-duration: 0.3s;
+}
+.header__scroll-next .image {
+  transition-duration: 0.3s;
+}
+.header__scroll-next:hover {
+  color: #4754EB;
+}
+.header__scroll-next:hover .image {
+  content: url("../images/svg/Wheeldown_blue.svg");
+}
+.header__menu-buttons {
+  display: flex;
+}
+
 .footer__link_small {
   display: none;
 }
@@ -75,6 +91,10 @@ a {
   max-height: 2.85714rem;
   max-width: 2.85714rem;
   display: none;
+}
+
+.auth-button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
 }
 
 .page-wrapper {
@@ -109,6 +129,14 @@ a {
   padding: 1.25rem 1rem;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
+  transition-duration: 0.5s;
+}
+.input:focus, .textarea:focus {
+  border: #4754EB;
+}
+.input:hover::placeholder, .textarea:hover::placeholder {
+  color: #4754EB;
+  transition: 0.3s;
 }
 .input__input {
   padding: 1rem 1.25rem;
@@ -135,6 +163,12 @@ a {
   justify-content: space-between;
   width: 31.32rem;
   color: #808080;
+}
+.header__nav a {
+  transition-duration: 0.3s;
+}
+.header__nav a:hover {
+  color: #4754EB;
 }
 
 .send-mail__form {
@@ -180,6 +214,10 @@ a {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
+  transition-duration: 0.2s;
+}
+.work-info__select:hover {
+  color: #4754EB;
 }
 
 .work-info__select_high-light {
@@ -199,6 +237,10 @@ a {
 .advantage {
   border-radius: 1.5rem;
   filter: drop-shadow(0px 0px 20px rgba(25, 25, 25, 0.05));
+  transition-duration: 0.5s;
+}
+.advantage:hover {
+  filter: drop-shadow(0.528rem 0.528rem 1rem #808080);
 }
 .advantage__head {
   font-size: 1.5rem;
@@ -211,6 +253,9 @@ a {
 }
 .advantage__emoji {
   margin-right: 0.75rem;
+  max-width: 3.562rem;
+  max-height: 3.562rem;
+  transition-duration: 0.5s;
 }
 .advantage__body {
   background-color: #fdfdfd;
@@ -236,9 +281,37 @@ a {
 .how-we-work__inner {
   padding: 5rem 0;
 }
+.how-we-work__slide-1 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(0);
+}
+.how-we-work__slide-2 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(-100%);
+}
+.how-we-work__slide-3 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(-100%);
+}
 
 .work-info {
   max-width: 28.94rem;
+  overflow: hidden;
+  position: relative;
+  min-height: 31.812rem;
+  min-width: 32.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .work-info__elements {
   display: flex;
@@ -267,6 +340,13 @@ a {
   font-size: 1.125rem;
   margin-top: 2.531rem;
 }
+.work-info__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.work-info__button:active {
+  background-color: #2F3BB7;
+  padding: 0.75rem 1.5rem;
+}
 
 .decorative-line {
   background-color: white;
@@ -291,6 +371,14 @@ a {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  transition-duration: 0.3s;
+}
+.send-mail__button:hover, .fair-price__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.send-mail__button:active, .fair-price__button:active {
+  padding: 0.75rem 1.5rem;
+  color: #2F3BB7;
 }
 
 .our-tariffs {
@@ -303,6 +391,11 @@ a {
   filter: drop-shadow(0 0 0.31rem #F2F2F2);
   max-width: 21.25rem;
   min-width: 16.88rem;
+  transition-duration: 0.5s;
+}
+.tariff:hover {
+  filter: drop-shadow(0 0.25rem 2rem #808080);
+  max-height: 35rem;
 }
 .tariff__body {
   background-color: #F2F2F2;
@@ -329,6 +422,8 @@ a {
 }
 .tariff__head {
   padding: 1.25rem 0 1.25rem 1.5rem;
+  padding-background-color: white;
+  padding-border-radius: 1rem 1rem 0 0;
 }
 .tariff__head-title {
   font-size: 1.5rem;
@@ -342,6 +437,12 @@ a {
 .reviews {
   background-image: url("../images/svg/3Screen.svg");
   background-size: cover;
+}
+.reviews__cats-structured {
+  color: #808080;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition-duration: 0.4s;
 }
 .reviews__inner {
   position: relative;
@@ -359,9 +460,17 @@ a {
   font-weight: bold;
   font-size: 1.125rem;
 }
+.reviews__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.reviews__button:active {
+  color: #2F3BB7;
+  padding: 0.75rem 1.5rem;
+}
 .reviews__button_pos {
   display: flex;
   justify-content: flex-end;
+  grid-area: 4/1/5/3;
 }
 
 .review {
@@ -370,6 +479,7 @@ a {
   border-radius: 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition-duration: 0.5s;
+  filter: drop-shadow(0 0.85rem 1rem #808080);
 }
 .review__head {
   background-color: white;
@@ -400,17 +510,20 @@ a {
   transform: translateX(-50%);
   top: 15%;
   left: 50%;
+  grid-area: 2/1;
   z-index: 4;
 }
 .review2 {
   left: 0%;
   top: 23%;
+  grid-area: 2/2;
   z-index: 3;
 }
 .review3 {
   transform: translateX(-50%);
   top: 55%;
   left: 46%;
+  grid-area: 3/1;
   animation-duration: 10s;
   animation-name: review1;
   animation-iteration-count: infinite;
@@ -419,6 +532,7 @@ a {
 .review4 {
   top: 38%;
   right: 0%;
+  grid-area: 3/2;
   z-index: 1;
 }
 .review__rating {
@@ -519,6 +633,13 @@ a {
   color: white;
   background-color: #4754EB;
 }
+.fair-price__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.fair-price__button:active {
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3BB7;
+}
 
 .our-tariffs__inner {
   display: grid;
@@ -570,6 +691,13 @@ a {
   color: #808080;
   font-size: 1.125rem;
   border-radius: 1.5rem;
+  transition-duration: 0.5s;
+}
+.textarea:focus {
+  border: #4754EB;
+}
+.textarea:hover::placeholder {
+  color: #4754EB;
 }
 
 .feedback__area {
@@ -605,6 +733,13 @@ a {
   font-size: 1.125rem;
   font-weight: bold;
 }
+.feedback__form_button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.feedback__form_button:active {
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3BB7;
+}
 
 .footer {
   background-color: #4754EB;
@@ -625,6 +760,20 @@ a {
   display: flex;
   gap: 0.5rem;
 }
+.footer__nav a {
+  align-self: flex-end;
+  transition-duration: 0.5s;
+}
+.footer__nav img {
+  transition-duration: 0.5s;
+}
+.footer__nav:hover .image {
+  content: url("../images/svg/Arrow_gray.svg");
+}
+.footer__nav:hover a {
+  color: #D9D9D9;
+  align-self: flex-end;
+}
 
 .fair-price__form {
   max-width: 28.5rem;
@@ -643,10 +792,12 @@ a {
   border-radius: 1rem;
   border: none;
   font-size: 1.125rem;
+  transition-duration: 0.3s;
 }
 
 .image {
   max-width: 100%;
+  transition-duration: 0.5s;
 }
 
 .button-alt, .tariff__button, .reviews__button {
