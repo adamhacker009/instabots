@@ -26,12 +26,14 @@ const observer = new IntersectionObserver(entries => {
                 case 'fair-price__container':
                     $('.fair-price__container').querySelector('.image').style.transform = 'rotate(15deg)'
                     break
+
             }
         } else {
             switch (entry.target.className) {
                 case 'fair-price__container':
                     $('.fair-price__container').querySelector('.image').style.transform = 'rotate(0deg)'
                     break
+
             }
         }
     })
@@ -56,12 +58,12 @@ workInfo.forEach((selector, id) => {
             case 0:
                 $(".how-we-work__slide-1").style.transform = 'translateX(0)'
                 $(".how-we-work__slide-2").style.transform = 'translateX(-100%)'
-                $(".how-we-work__slide-3").style.transform = 'translateX(-100%)'
+                $(".how-we-work__slide-3").style.transform = 'translateX(150%)'
                 break
             case 1:
                 $(".how-we-work__slide-1").style.transform = 'translateX(-100%)'
                 $(".how-we-work__slide-2").style.transform = 'translateX(0)'
-                $(".how-we-work__slide-3").style.transform = 'translateX(-100%)'
+                $(".how-we-work__slide-3").style.transform = 'translateX(150%)'
                 break
             case 2:
                 $(".how-we-work__slide-1").style.transform = 'translateX(-100%)'
@@ -106,7 +108,7 @@ document.querySelectorAll('.question').forEach(review => {
             review.querySelector('.question__body').style.height = review.clientHeight + 'px'
         } else {
             review.querySelector('.question__button').className = 'question__button-closed'
-            review.querySelector('.question__body').style.padding = '0 0 0 0'
+            review.querySelector('.question__body').style.padding = '0 3rem 0 1.5rem'
             review.querySelector('.question__body').style.height = '0'
             review.querySelector('.question__head').className = 'question__head-closed'
         }
@@ -150,5 +152,4 @@ $('.reviews__button').addEventListener('click', function () {
         $('.reviews__cats-structured').style.opacity = '100'
     }, 500)
 })
-
 observer.observe($(".fair-price__container"))

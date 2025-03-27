@@ -14,9 +14,10 @@ $null: rgba(0,0,0,0.0)
 
 body
   font-family: 'VisueltPro', sans-serif
-  background-color: $gray
+  background-color: white
   padding: 1.5rem
   min-height: 100vh
+
 
 a
   text-decoration: none
@@ -27,6 +28,33 @@ a
   color: black
   font-size: 2.25rem
   margin-bottom: 2.5rem
+
+@keyframes feedback__background-slide-1
+  0%
+    opacity: 1
+    background: radial-gradient(circle 180px at 250px 450px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 150px at 35px 350px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%)
+  50%
+    opacity: 0.0
+  100%
+    opacity: 0
+@keyframes feedback__background-slide-2
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+    background: radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 220px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%)
+  100%
+    opacity: 0
+@keyframes feedback__background-slide-3
+  0%
+    opacity: 0
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    background: radial-gradient(circle 250px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), #F2F2F2
+
+
 
 .general-text
   color: $dark-gray
@@ -236,12 +264,19 @@ section
   grid-template-columns: repeat(3, 1fr)
   column-gap: 1rem
 
+
 .how-we-work
   background-image: url("../images/imgs/11.png")
   &__content
     display: flex
     align-items: center
     gap: 1.5rem
+    &-image-normal
+      max-width: 39.251rem
+      max-height: 35rem
+    &-image-small
+      max-height: 17.5rem
+      max-width: 19.625rem
   &__inner
     padding: 5rem 0
   &__slide-
@@ -262,7 +297,7 @@ section
       position: absolute
       top: 1.875rem
       transition-duration: 0.5s
-      transform: translateX(-100%)
+      transform: translateX(150%)
 
 .work-info
   max-width: 28.94rem
@@ -512,6 +547,7 @@ section
     height: 0
     overflow: hidden
     transition-duration: 0.5s
+    padding: 0 3rem 0 1.5rem
   &__head-closed
     @extend .question__head
     border-bottom-left-radius: 1rem
@@ -565,18 +601,98 @@ section
   justify-items: center
   gap: 1.5rem
 
-.feedback__inner
-  display: flex
-  align-items: center
-  padding: 5rem 0
-  justify-content: space-between
+.feedback
+  &__inner
+    display: flex
+    align-items: center
+    padding: 5rem 0
+    justify-content: space-between
 
-.feedback__form
-  width: 30.38rem
+  &__circle-animated-slide-1
+    animation: 5s infinite feedback__background-slide-1
+    height: 30.562rem
+    width: 30.562rem
+    border-radius: 50%
+    transition-duration: 0.2s
+    position: absolute
+    bottom: 0
 
-.feedback__form > h3
-  font-size: 2.25rem
-  margin-bottom: 1rem
+  &__circle-animated-slide-2
+    animation: 5s infinite feedback__background-slide-2
+    height: 30.562rem
+    width: 30.562rem
+    border-radius: 50%
+    transition-duration: 0.2s
+    position: absolute
+    bottom: 0
+
+  &__circle-animated-slide-3
+    animation: 5s infinite feedback__background-slide-3
+    height: 30.562rem
+    width: 30.562rem
+    border-radius: 50%
+    transition-duration: 0.2s
+    position: absolute
+    bottom: 0
+
+  &__form
+    width: 30.38rem
+
+  &__form > h3
+    font-size: 2.25rem
+    margin-bottom: 1rem
+
+  &__form > p
+    color: $dark-gray
+    font-size: 1.125rem
+    line-height: 135%
+    margin-bottom: 1.5rem
+
+  &__area
+    background-color: $gray
+    color: $dark-gray
+    font-size: 1.125rem
+    border-radius: 1.5rem
+
+  &__inputs
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    margin-bottom: 2.5rem
+
+  &__under_text
+    @extend .under-text
+    width: 14.88rem
+    margin: 0
+
+  &__input > input
+    background-color: $gray
+    color: $dark-gray
+    font-size: 1.125rem
+    padding: 1rem
+    width: 100%
+    border-radius: 1rem
+
+  &__form_button
+    @extend .button
+    padding: 1rem 1.5rem
+    font-size: 1.125rem
+    font-weight: bold
+    &:hover
+      padding: 0.625rem 1.5rem 0.875rem
+    &:active
+      padding: 0.75rem 1.5rem
+      background-color: #2F3BB7
+  &__image
+    position: relative
+    height: 30.562rem
+    width: 30.562rem
+    .image
+      position: absolute
+      bottom: 0
+      border-bottom-left-radius: 50%
+      border-bottom-right-radius: 50%
+
 
 #burger-hidden
   display: none
@@ -584,11 +700,6 @@ section
 #burger-show
   display: block
 
-.feedback__form > p
-  color: $dark-gray
-  font-size: 1.125rem
-  line-height: 135%
-  margin-bottom: 1.5rem
 
 .questions__head
   padding-left: 1.87rem
@@ -607,44 +718,6 @@ section
     border: #4754EB
   &:hover::placeholder
     color: #4754EB
-
-.feedback__area
-  background-color: $gray
-  color: $dark-gray
-  font-size: 1.125rem
-  border-radius: 1.5rem
-
-
-
-.feedback__inputs
-  display: flex
-  flex-direction: column
-  gap: 1rem
-  margin-bottom: 2.5rem
-
-.feedback__under_text
-  @extend .under-text
-  width: 14.88rem
-  margin: 0
-
-.feedback__input > input
-  background-color: $gray
-  color: $dark-gray
-  font-size: 1.125rem
-  padding: 1rem
-  width: 100%
-  border-radius: 1rem
-
-.feedback__form_button
-  @extend .button
-  padding: 1rem 1.5rem
-  font-size: 1.125rem
-  font-weight: bold
-  &:hover
-    padding: 0.625rem 1.5rem 0.875rem
-  &:active
-    padding: 0.75rem 1.5rem
-    background-color: #2F3BB7
 
 .footer
   background-color: $blue
