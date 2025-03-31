@@ -1,0 +1,49 @@
+@use '../general/colors' as *;
+
+
+.footer{
+  background-color: $blue;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  color: white;
+  transition-duration: 0.2s;
+
+  &__link_small {
+    display: none
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 1.56rem;
+  }
+  &__content{
+    width: 12rem;
+  }
+  &__nav{
+    display: flex;
+    gap: 0.5rem;
+    a{
+      align-self: flex-end;
+      transition-duration: 0.5s;
+    }
+    img{
+      transition-duration: 0.5s;
+    }
+    &:hover{
+      .image{
+        content: url("../../images/svg/Arrow_gray.svg");
+      }
+     a{
+       color: #D9D9D9;
+       align-self: flex-end;
+     }
+
+    }
+
+  }
+
+}
+@media (max-width: 1234px){
+
+}

@@ -1,0 +1,42 @@
+.how-we-work {
+  background-image: url("../../images/imgs/11.png");
+}
+.how-we-work__content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.how-we-work-image-normal {
+  max-width: 39.251rem;
+  max-height: 35rem;
+}
+.how-we-work-image-small {
+  max-height: 17.5rem;
+  max-width: 19.625rem;
+}
+.how-we-work__inner {
+  padding: 5rem 0;
+}
+.how-we-work__slide-1 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(0);
+}
+.how-we-work__slide-2 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(-100%);
+}
+.how-we-work__slide-3 {
+  max-width: 28.937rem;
+  position: absolute;
+  top: 1.875rem;
+  transition-duration: 0.5s;
+  transform: translateX(150%);
+}
+
+/*# sourceMappingURL=how-we-work.css.map */

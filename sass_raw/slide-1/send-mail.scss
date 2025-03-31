@@ -1,0 +1,53 @@
+@use '../general/colors' as *;
+@use "../general/general-elements" as *;
+
+.send-mail{
+  background-image: url("../../images/svg/1Screen.svg");
+  background-size: cover;
+  background-position: center;
+  &__inner{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  &__form{
+    gap: 7.875rem;
+    max-height: 39.25rem;
+    max-width: 39.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__input{
+    max-width: 29.06rem;
+    position: relative;
+  }
+
+  .send-mail__button{
+    @extend .input-button;
+    color: $blue;
+    background-color: white;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transition-duration: 0.3s;
+    &:hover{
+      padding: 0.625rem 1.5rem 0.875rem
+    }
+    &:active{
+      padding: 0.75rem 1.5rem;
+      color: #2F3BB7
+    }
+  }
+}
+@media (max-width: 1234px){
+  .send-mail{
+    &__inner{
+      flex-direction: column
+    }
+    &__form{
+      height: auto;
+      max-width: 39.25rem;
+    }
+    }
+}

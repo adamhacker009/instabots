@@ -1,0 +1,67 @@
+@use "../general/colors" as *;
+@use "../general/general-elements" as *;
+
+.work-info{
+  max-width: 28.94rem;
+  overflow: hidden;
+  position: relative;
+  min-height: 31.812rem;
+  min-width: 32.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__elements{
+    display: flex;
+    max-width: 26.38rem;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.875rem;
+  }
+  &__head{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  &__high-light{
+    @extend .high-light;
+    font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  }
+  &__text-content{
+    color: $dark-gray;
+    line-height: 135%;
+    font-size: 1.125rem;
+  }
+  &__text-content:nth-child(1){
+    margin-bottom: 1rem;
+  }
+  &__button{
+    @extend .button;
+    font-size: 1.125rem;
+    margin-top: 2.531rem;
+    &:hover{
+      padding: 0.625rem 1.5rem 0.875rem;
+    }
+    &:active{
+      background-color: #2F3BB7;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
+  &__select{
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border: none;
+    transition-duration: 0.2s;
+    &:hover{
+      color: #4754EB;
+    }
+    &_high-light{
+      background-color: rgba(0, 0, 0, 0.0);
+      color: $blue;
+      border: none;
+    }
+  }
+}
+@media (max-width: 1234px){
+
+}

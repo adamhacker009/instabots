@@ -1,0 +1,123 @@
+@use "../general/general-elements" as *;
+@use "../general/colors" as *;
+
+.reviews{
+  background-image: url("../../images/svg/3Screen.svg");
+  background-size: cover;
+  &__cats-structured{
+    color: $dark-gray;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition-duration: 0.4s;
+  }
+  &__inner{
+    position: relative;
+    display: flex;
+    min-height: 50rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0;
+  }
+  &__title{
+    font-size: 2.25rem;
+    justify-self: flex-start;
+  }
+  &__button{
+    @extend .button-alt;
+    font-weight: bold;
+    font-size: 1.125rem;
+    &:hover{
+      padding: 0.625rem 1.5rem 0.875rem;
+    }
+    &:active{
+      color: #2F3BB7;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
+  &__button_pos{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}
+.review{
+  position: absolute;
+  max-width: 39.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition-duration: 0.5s;
+  filter: drop-shadow(0 0.85rem 1rem #808080);
+  &__head{
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    &-name{
+      font-size: 1.5rem;
+    }
+    &-wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1.5rem 1rem 1rem;
+    }
+    &-date{
+      color: $dark-gray;
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+    }
+  }
+  &__body{
+    background-color: $gray;
+    padding: 1rem 1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  &1{
+    transform: translateX(-50%);
+    top: 15%;
+    left: 50%;
+    grid-area: 2/1;
+    z-index: 4;
+  }
+  &2{
+    left: 0%;
+    top: 23%;
+    grid-area: 2/2;
+    z-index: 3;
+  }
+  &3{
+    transform: translateX(-50%);
+    top: 55%;
+    left: 46%;
+    grid-area: 3/1;
+    animation-duration: 10s;
+    animation-name: review1;
+    animation-iteration-count: infinite;
+    z-index: 2;
+  }
+  &4{
+    top: 38%;
+    right: 0%;
+    grid-area: 3/2;
+    z-index: 1;
+  }
+  &__rating{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.25rem;
+  }
+  &-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.reviewer-info{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 1234px){
+
+}

@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "VisueltPro";
+  src: url("./fonts/VisueltPro-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: #F2F2F2;
+  color: #808080;
+  font-size: 1.125rem;
+  border-radius: 1.5rem;
+  transition-duration: 0.5s;
+}
+.textarea:focus {
+  border: #4754EB;
+}
+.textarea:hover::placeholder {
+  color: #4754EB;
+}
+
+body {
+  font-family: "VisueltPro", sans-serif;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+#burger-hidden {
+  display: none;
+}
+
+#burger-show {
+  display: block;
+}
+
+.button, .auth-button, .button-alt {
+  background-color: #4754EB;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.125rem;
+  transition-duration: 0.3s;
+}
+
+.button-alt {
+  color: #4754EB;
+  background-color: white;
+}
+
+.logo {
+  color: #4754EB;
+}
+
+.image {
+  max-width: 100%;
+  transition-duration: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  transition-duration: 0.2s;
+}
+
+.section-head {
+  color: black;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.general-text {
+  color: #808080;
+  font-size: 1.125rem;
+  line-height: 135%;
+}
+
+.user-button {
+  padding: 0;
+  border: none;
+  background-color: white;
+  max-height: 2.85714rem;
+  max-width: 2.85714rem;
+  display: none;
+}
+
+.auth-button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+
+.page-wrapper {
+  background-color: white;
+  border-radius: 1.5rem;
+}
+
+.wrapper {
+  padding: 0 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 83rem;
+}
+
+.container-blur {
+  backdrop-filter: blur(8.75rem);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.container-lg {
+  margin: 0 auto;
+  max-width: 84rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: "VisueltPro", sans-serif;
+  border: none;
+  padding: 1.25rem 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+}
+.input:focus, .textarea:focus {
+  border: #4754EB;
+}
+.input:hover::placeholder, .textarea:hover::placeholder {
+  color: #4754EB;
+  transition: 0.3s;
+}
+.input__input {
+  padding: 1rem 1.25rem;
+}
+
+.input-button, .send-mail .send-mail__button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.125rem;
+}
+
+.high-light {
+  color: #4754EB;
+}
+
+.main-text {
+  color: #808080;
+}
+
+.under-text {
+  margin: 1rem 0 0 0.5rem;
+  width: 22.13rem;
+  line-height: 135%;
+  font-size: 0.75rem;
+  color: #808080;
+}
+
+.decorative-line {
+  background-color: white;
+  max-width: 1.5rem;
+  height: 1px;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 125%;
+  margin-bottom: 2.5rem;
+}
+
+.lang-change {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  word-spacing: 2px;
+  color: #4754EB;
+  font-size: 1.125rem;
+  margin-right: 1rem;
+}
+.lang-change__not_selected {
+  color: #808080;
+}
+
+.send-mail {
+  background-image: url("../../images/svg/1Screen.svg");
+  background-size: cover;
+  background-position: center;
+}
+.send-mail__inner {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.send-mail__form {
+  gap: 7.875rem;
+  max-height: 39.25rem;
+  max-width: 39.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.send-mail__input {
+  max-width: 29.06rem;
+  position: relative;
+}
+.send-mail .send-mail__button {
+  color: #4754EB;
+  background-color: white;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transition-duration: 0.3s;
+}
+.send-mail .send-mail__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.send-mail .send-mail__button:active {
+  padding: 0.75rem 1.5rem;
+  color: #2F3BB7;
+}
+
+@media (max-width: 1234px) {
+  .send-mail__inner {
+    flex-direction: column;
+  }
+  .send-mail__form {
+    height: auto;
+    max-width: 39.25rem;
+  }
+}
+
+/*# sourceMappingURL=send-mail.css.map */

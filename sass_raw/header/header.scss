@@ -1,0 +1,116 @@
+@use "../general/colors" as *;
+@use "../general/general-elements" as *;
+
+.header{
+  font-size: 1.125rem;
+  background-color: white;
+  position: sticky;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  z-index: 1;
+  transition-duration: 0.2s;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  &__logo-buttons{
+    display: flex;
+    align-items: center;
+  }
+  &__burger{
+    display: none;
+  }
+  &__burger-button{
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+    padding: 0.5rem;
+  }
+  &__scroll-next{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    span{
+      transition-duration: 0.3s
+    }
+    .image{
+      transition-duration: 0.3s
+    }
+    &:hover{
+      color: #4754EB;
+      .image{
+        content: url("../../images/svg/Wheeldown_blue.svg");
+      }
+    }
+  }
+
+  &-burger__lang-change{
+    @extend .lang-change;
+  }
+  &__menu-buttons{
+    display: flex;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    width: 31.32rem;
+    color: $dark-gray;
+  }
+  a{
+    transition-duration: 0.3s;
+    &:hover{
+      color: #4754EB;
+    }
+
+  }
+}
+@media (max-width: 1234px){
+  .header{
+    &__scroll-next{
+      display: none
+    }
+    .header-burger{
+      font-size: 3.5rem;
+      background-image: url("../../images/svg/dudaduu.svg");
+      border-radius: 0 0 1.5rem 1.5rem;
+    }
+    &__lang-change{
+      display: block
+    }
+
+    &__head{
+      font-size: 1.5rem;
+      color: $dark-gray;
+      margin-bottom: 2.5rem;
+    }
+
+    &__lang-change{
+      font-size: 3.5rem;
+    }
+
+    &__nav{
+      display: flex;
+      flex-direction: column;
+      gap: 1.56rem;
+      margin-bottom: 9.75rem;
+    }
+
+    &__container{
+      padding: 5rem 0;
+
+    }
+
+    &__burger{
+      display: block;
+      margin-right: 1rem;
+    }
+    &__nav{
+      display: none
+    }
+  }
+
+
+
+}

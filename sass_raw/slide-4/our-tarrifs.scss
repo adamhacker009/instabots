@@ -1,0 +1,73 @@
+@use "../general/colors" as *;
+@use "../general/general-elements" as *;
+
+.our-tariffs{
+  padding: 5rem 0 5.5rem;
+  &__inner{
+    @extend .container-lg;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.tariff{
+  border-radius: 1.56rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 0.31rem $gray);
+  max-width: 21.25rem;
+  min-width: 16.88rem;
+  transition-duration: 0.5s;
+  &:hover{
+    filter: drop-shadow(0 0.25rem 2rem #808080);
+    max-height: 35rem;
+  }
+
+  &__body{
+    background-color: $gray;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  &__features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__feature{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  &__button{
+    @extend .button-alt;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  &__head{
+    padding: 1.25rem 0 1.25rem 1.5rem;
+    background-color: white;
+    border-radius: 1rem 1rem 0 0;
+    &-title{
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+
+    }
+    &-price{
+      color: $dark-gray;
+      font-size: 1.5rem;
+    }
+  }
+
+
+}
+@media (max-width: 1234px){
+
+}
