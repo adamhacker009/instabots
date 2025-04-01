@@ -45,6 +45,28 @@
   column-gap: 1rem;
 }
 @media (max-width: 1234px){
-
+  .our-advantages__grid{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+@media (max-width: 580px){
+  .advantage__head {
+    h3{
+      font-size: 1.25rem;
+    }
+    img{
+      max-width: 2.25rem;
+      max-height: 2.8125rem;
+    }
+  }
+
+
+  .advantage__body{
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+
+
+}

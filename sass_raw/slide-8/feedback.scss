@@ -134,4 +134,61 @@
 }
 @media (max-width: 1234px){
 
+  .feedback__form{
+    width: auto
+  }
+
+  .feedback__inner{
+    display: block
+  }
+
+  .feedback__form > p{
+    max-width: 30.37rem
+  }
+  .feedback__image{
+    display: none
+  }
+
+
+}
+@media (max-width: 580px){
+  .feedback{
+    &__collection{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    &__form{
+      h3{
+        font-size: 1.85714rem
+      }
+      p{
+        font-size: 1rem
+      }
+    }
+    &__input{
+      input{
+        font-size: 1rem;
+      }
+      &__area{
+        textarea{
+          font-size: 1rem
+        }
+      }
+    }
+    &__form_button{
+      font-size: 1rem;
+      padding: 1.0357rem 1.71428rem;
+    }
+    &__under_text{
+      font-size: 0.85714rem;
+      width: 22.85714rem;
+    }
+    &__container{
+      padding: 2.85714rem 0
+    }
+
+  }
+
+
 }

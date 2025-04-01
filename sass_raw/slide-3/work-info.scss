@@ -63,5 +63,44 @@
   }
 }
 @media (max-width: 1234px){
+  .work-info{
+    max-width: 38rem;
+    height: auto;
+  }
+
+}
+@media (max-width: 580px){
+  .work-info{
+
+    max-width: 20rem;
+
+    &__high_light{
+      font-size: 1rem;
+    }
+
+    &__p{
+      font-size: 1rem;
+    }
+
+    &__head{
+      font-size: 1.85714rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__button{
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    &__elements{
+      gap: 0.5714rem;
+      margin-bottom: 1.5rem;
+    }
+
+    span{
+      font-size: 1rem;
+    }
+
+  }
 
 }

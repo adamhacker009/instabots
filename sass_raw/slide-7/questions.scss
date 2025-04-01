@@ -2,7 +2,7 @@
 @use "../general/general-elements" as *;
 
 .questions{
-  background-image: url("../../images/svg/7Screen.svg");
+  background-image: url("../images/svg/7Screen.svg");
   background-size: 100%;
   &__inner{
     @extend .container-lg;
@@ -75,5 +75,34 @@
 
 }
 @media (max-width: 1234px){
+
+}
+@media (max-width: 580px){
+  .question{
+    &__head{
+      &_wrapper{
+        h4{
+          font-size: 1.85714rem;
+        }
+      }
+      &__body{
+        p{
+          font-size: 1rem;
+        }
+      }
+
+    }
+    &__button{
+      img{
+        max-height: 0.7857rem;
+        max-width: 0.7857rem;
+      }
+      padding: 0.5714rem
+    }
+
+  }
+  .questions__wrapper-container{
+    padding: 2.5rem 0;
+  }
 
 }

@@ -2,7 +2,7 @@
 @use "../general/colors" as *;
 
 .reviews{
-  background-image: url("../../images/svg/3Screen.svg");
+  background-image: url("../images/svg/3Screen.svg");
   background-size: cover;
   &__cats-structured{
     color: $dark-gray;
@@ -47,7 +47,7 @@
   border-radius: 1.25rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition-duration: 0.5s;
-  filter: drop-shadow(0 0.85rem 1rem #808080);
+  filter: drop-shadow(0 0.85rem 1rem rgba(94, 84, 160, 0.25));
   &__head{
     background-color: white;
     border-top-left-radius: 1rem;
@@ -119,5 +119,65 @@
   gap: 1rem;
 }
 @media (max-width: 1234px){
+  .reviews__inner{
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 3fr);
+    gap: 1.5rem;
+    justify-items: center;
+  }
 
+  .review{
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    transform: none;
+  }
+
+  .reviews__button{
+    display: none;
+  }
+
+}
+
+@media (max-width: 580px){
+  .reviews__title {
+    font-size: 1.2857rem;
+    align-self: center;
+  }
+  .review{
+    width: auto
+  }
+  .reviews__container{
+    padding: 2.85714rem 0
+  }
+
+  .reviewer-info{
+    display: flex;
+    gap: 1.142857rem;
+    img{
+      max-width: 3.42857rem;
+      max-height: 3.42857rem;
+    }
+  }
+
+  .review__head-name{
+    font-size: 1.2857rem
+  }
+
+  .review__head-date{
+    font-size: 1rem
+  }
+
+  .review__body > p{
+    font-size: 1rem
+  }
+
+  .review__rating{
+    gap: 0.2857rem;
+    img{
+      max-width: 1.142857rem;
+      max-height: 1.142857rem;
+    }
+  }
 }

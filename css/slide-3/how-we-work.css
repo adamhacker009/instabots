@@ -1,5 +1,5 @@
 .how-we-work {
-  background-image: url("../../images/imgs/11.png");
+  background-image: url("../images/imgs/11.png");
 }
 .how-we-work__content {
   display: flex;
@@ -37,6 +37,12 @@
   top: 1.875rem;
   transition-duration: 0.5s;
   transform: translateX(150%);
+}
+
+@media (max-width: 1234px) {
+  .how-we-work__content {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=how-we-work.css.map */

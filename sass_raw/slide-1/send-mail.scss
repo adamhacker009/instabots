@@ -2,7 +2,7 @@
 @use "../general/general-elements" as *;
 
 .send-mail{
-  background-image: url("../../images/svg/1Screen.svg");
+  background-image: url("../images/svg/1Screen.svg");
   background-size: cover;
   background-position: center;
   &__inner{
@@ -50,4 +50,18 @@
       max-width: 39.25rem;
     }
     }
+}
+@media (max-width: 580px){
+  .send-mail__inner{
+    padding: 2.5rem 0
+  }
+
+  .send-mail__form{
+    max-width: 22.85714rem
+  }
+
+  .send-mail__button{
+    font-size: 1rem
+  }
+
 }

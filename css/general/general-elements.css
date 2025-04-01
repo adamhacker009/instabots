@@ -27,7 +27,7 @@
 
 body {
   font-family: "VisueltPro", sans-serif;
-  background-color: white;
+  background-color: #F2F2F2;
   padding: 1.5rem;
   min-height: 100vh;
 }
@@ -101,6 +101,7 @@ section {
 .page-wrapper {
   background-color: white;
   border-radius: 1.5rem;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -188,6 +189,50 @@ section {
 }
 .lang-change__not_selected {
   color: #808080;
+}
+
+@media (max-width: 1234px) {
+  .lang-change {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    padding: 0.375rem;
+  }
+  .decorative-line {
+    max-width: 1.142857rem;
+    height: 50px;
+    color: white;
+  }
+  .title {
+    font-size: 2.5714rem;
+  }
+  .input, .textarea {
+    font-size: 0.875rem;
+  }
+  .input-button {
+    font-size: 0.875rem;
+  }
+  .under-text {
+    font-size: 0.85714rem;
+  }
+  .section-head {
+    font-size: 1.2857rem;
+    margin-bottom: 2.5rem;
+  }
+  .input, .textarea {
+    font-size: 1rem;
+  }
+  .user-button {
+    display: block;
+  }
+  .auth-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=general-elements.css.map */

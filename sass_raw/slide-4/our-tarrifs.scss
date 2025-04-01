@@ -7,12 +7,14 @@
     @extend .container-lg;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     justify-items: center;
     gap: 1.5rem;
   }
 }
 
 .tariff{
+  align-self: flex-start;
   border-radius: 1.56rem;
   border-color: rgba(255, 255, 255, 0.5);
   filter: drop-shadow(0 0 0.31rem $gray);
@@ -21,7 +23,9 @@
   transition-duration: 0.5s;
   &:hover{
     filter: drop-shadow(0 0.25rem 2rem #808080);
-    max-height: 35rem;
+    .tariff__button{
+      margin: 4px 0;
+    }
   }
 
   &__body{
@@ -69,5 +73,41 @@
 
 }
 @media (max-width: 1234px){
+  .our-tariffs__inner{
+    grid-template-columns: repeat(2, 1fr)
+  }
 
+}
+@media (max-width: 660px){
+  .our-tariffs__inner{
+    grid-template-columns: 1fr
+  }
+}
+@media (max-width: 580px){
+  .our-tariffs {
+    .wrapper {
+      .container {
+        h3 {
+          font-size: 1.2857rem
+        }
+      }
+    }
+  }
+  .tariff{
+    &__head{
+      h4{
+        font-size: 1.2857rem
+      }
+      span{
+        font-size: 1.2857rem
+      }
+    }
+
+    &__feature{
+      img{
+        max-width: 1.7142rem;
+        max-height: 1.7142rem;
+      }
+    }
+  }
 }

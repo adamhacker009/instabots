@@ -29,11 +29,31 @@
   transition-duration: 0.5s;
 }
 .footer__nav:hover .image {
-  content: url("../../images/svg/Arrow_gray.svg");
+  content: url("../images/svg/Arrow_gray.svg");
 }
 .footer__nav:hover a {
   color: #D9D9D9;
   align-self: flex-end;
+}
+
+@media (max-width: 580px) {
+  .footer {
+    font-size: 1rem;
+  }
+  .footer__left p:nth-child(2) {
+    color: #F2F2F2;
+    margin-top: 0.57142rem;
+  }
+  .footer__right {
+    align-items: center;
+    gap: 0.5714rem;
+  }
+  .footer__right__link_small {
+    display: block;
+  }
+  .footer__right__link_default {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

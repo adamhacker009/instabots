@@ -41,7 +41,7 @@
     &:hover{
       color: #4754EB;
       .image{
-        content: url("../../images/svg/Wheeldown_blue.svg");
+        content: url("../images/svg/Wheeldown_blue.svg");
       }
     }
   }
@@ -73,7 +73,7 @@
     }
     .header-burger{
       font-size: 3.5rem;
-      background-image: url("../../images/svg/dudaduu.svg");
+      background-image: url("../images/svg/dudaduu.svg");
       border-radius: 0 0 1.5rem 1.5rem;
     }
     &__lang-change{
@@ -112,5 +112,8 @@
   }
 
 
+
+}
+@media (max-width: 580px){
 
 }

@@ -43,5 +43,22 @@
 }
 @media (max-width: 1234px){
 
+  .fair-price__form{
+    max-width: 28.13rem;
+  }
+
+  .fair-price__container{
+    flex-direction: column
+  }
 }
 
+@media (max-width: 580px){
+  .fair-price__container{
+    padding: 2.5rem 0;
+  }
+
+.fair-price__form{
+  max-width: 22.85714rem;
+}
+
+}
