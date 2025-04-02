@@ -1,18 +1,6 @@
 @use '../general/colors' as *;
 @use "../general/general-elements" as *;
-
-
-@keyframes feedback__background-slide{
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
+@use "../general/animation" as *;
 
 .feedback{
   &__collection{
@@ -28,7 +16,7 @@
   }
   &__circle-animated-slide-1{
     opacity: 0;
-    animation: 5s infinite feedback__background-slide;
+    animation: 5s infinite background-slide;
     background: radial-gradient(circle 180px at 250px 450px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 150px at 35px 350px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%);
     animation-delay: -2.5s;
     height: 30.562rem;
@@ -40,7 +28,7 @@
   }
   &__circle-animated-slide-2{
     opacity: 0;
-    animation: 5s infinite feedback__background-slide;
+    animation: 5s infinite background-slide;
     background: radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 220px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%);
     height: 30.562rem;
     width: 30.562rem;
@@ -50,7 +38,7 @@
   }
   &__circle-animated-slide-3{
     opacity: 0;
-    animation: 5s infinite feedback__background-slide;
+    animation: 5s infinite background-slide;
     background: radial-gradient(circle 250px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), #F2F2F2;
     animation-delay: 2.5s;
     height: 30.562rem;

@@ -1,17 +1,29 @@
-/* Error: Expected expression.
- *    ,
- * 25 |   background: ;
- *    |               ^
- *    '
- *   sass_raw\dev.scss 25:15  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 25 \2502    background: ;\d\a    \2502                ^\a    \2575 \a   sass_raw\\dev.scss 25:15  root stylesheet";
+.test {
+  position: relative;
 }
+
+.test-1 {
+  position: absolute;
+  height: 45rem;
+  width: 87rem;
+  display: block;
+  background: radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0, 0, 0, 0)), radial-gradient(circle 13.25rem at 84rem 0, #EB478B, rgba(0, 0, 0, 0)), radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B, rgba(0, 0, 0, 0)), radial-gradient(circle 17.5rem at 81rem 38rem, #4754EB 0, rgba(0, 0, 0, 0)), radial-gradient(circle 40rem at 0 33rem, white 0, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+
+.test-2 {
+  position: absolute;
+  height: 45rem;
+  display: none;
+  width: 87rem;
+  background: radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0, 0, 0, 0)), radial-gradient(circle 13.25rem at 84rem 0, #EB478B, rgba(0, 0, 0, 0)), radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B, rgba(0, 0, 0, 0)), radial-gradient(circle 17.5rem at 81rem 38rem, #4754EB 0, rgba(0, 0, 0, 0)), radial-gradient(circle 40rem at 0 33rem, white 0, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+
+.test-3 {
+  position: absolute;
+  height: 45rem;
+  width: 87rem;
+  display: none;
+  background: radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14rem at 35.375rem 29.875rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 80.625rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 79rem at 70.875rem 0, white 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+
+/*# sourceMappingURL=dev.css.map */

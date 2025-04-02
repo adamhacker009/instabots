@@ -283,7 +283,7 @@ section {
     max-width: 22.85714rem;
   }
 }
-@keyframes feedback__background-slide {
+@keyframes background-slide {
   0% {
     opacity: 0;
   }
@@ -307,7 +307,7 @@ section {
 }
 .feedback__circle-animated-slide-1 {
   opacity: 0;
-  animation: 5s infinite feedback__background-slide;
+  animation: 5s infinite background-slide;
   background: radial-gradient(circle 180px at 250px 450px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 150px at 35px 350px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%);
   animation-delay: -2.5s;
   height: 30.562rem;
@@ -318,7 +318,7 @@ section {
 }
 .feedback__circle-animated-slide-2 {
   opacity: 0;
-  animation: 5s infinite feedback__background-slide;
+  animation: 5s infinite background-slide;
   background: radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 220px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 250px at 300px 350px, rgb(255, 255, 255) 0%, #F2F2F2 100%);
   height: 30.562rem;
   width: 30.562rem;
@@ -328,7 +328,7 @@ section {
 }
 .feedback__circle-animated-slide-3 {
   opacity: 0;
-  animation: 5s infinite feedback__background-slide;
+  animation: 5s infinite background-slide;
   background: radial-gradient(circle 250px at 250px 420px, #3C49DD 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 189px at 45px 400px, #EB478B 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(circle 238px at 245px 335px, rgb(134, 51, 176) 0%, rgba(0, 0, 0, 0) 100%), #F2F2F2;
   animation-delay: 2.5s;
   height: 30.562rem;
@@ -599,6 +599,37 @@ section {
 }
 .how-we-work {
   background-image: url("../images/imgs/11.png");
+  position: relative;
+}
+.how-we-work__background-slide-1 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 36.25rem 22.873rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 10.875rem at 30.875rem 38.873rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 79.125rem 33.625rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 63.375rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 75.625rem 0, #863380 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.how-we-work__background-slide-2 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14rem at 33.375rem 18.375rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 75.375rem 44.5rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 85rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 63.25rem 0, #863380 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.how-we-work__background-slide-3 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14rem at 35.375rem 29.875rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 80.625rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 79rem at 70.875rem 0, white 0%, rgba(0, 0, 0, 0)), #F2F2F2;
 }
 .how-we-work__content {
   display: flex;
@@ -882,9 +913,36 @@ section {
   }
 }
 .send-mail {
-  background-image: url("../images/svg/1Screen.svg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+}
+.send-mail__slide-1 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 20.25rem at 22.5rem 15.765rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 13.5rem at 19.578rem 42.197rem, #8633B0 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 19.75rem at 27.187rem 12px, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 10.875rem at 71.585rem 30.375rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 16rem at 81.772rem 17.88rem, white 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.send-mail__slide-2 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  background: radial-gradient(circle 19.625rem at 30.226rem 36.75rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 12.5rem at 22.448rem 30.723rem, #863380 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 15.625rem at 82.312rem 23.562rem, blue 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 19.625rem at 45.25rem 7.0625rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 9.375rem at 99.0625rem 43.5rem, white 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.send-mail__slide-3 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: 2.5s;
+  background: radial-gradient(circle 21.25rem at 15.437rem 30.812rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 91.437rem 17.875rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 11.125rem at 82.5rem 35.24rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 80.625rem 45.312rem, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14.375rem at 42.875rem 35.875rem, #8633B0 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 21.375rem at 35.937rem 1rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 11.125rem at 82.5rem 35.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 61.562rem 35.875rem, #8633B0 0%, rgba(0, 0, 0, 0)), #F2F2F2;
 }
 .send-mail__inner {
   display: flex;
@@ -893,8 +951,8 @@ section {
 }
 .send-mail__form {
   gap: 7.875rem;
-  max-height: 39.25rem;
-  max-width: 39.25rem;
+  height: 39.25rem;
+  width: 39.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -1,5 +1,36 @@
 .how-we-work {
   background-image: url("../images/imgs/11.png");
+  position: relative;
+}
+.how-we-work__background-slide-1 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 36.25rem 22.873rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 10.875rem at 30.875rem 38.873rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 79.125rem 33.625rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 63.375rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 75.625rem 0, #863380 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.how-we-work__background-slide-2 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14rem at 33.375rem 18.375rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 75.375rem 44.5rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 85rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 18.75rem at 63.25rem 0, #863380 0%, rgba(0, 0, 0, 0)), #F2F2F2;
+}
+.how-we-work__background-slide-3 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 14rem at 35.375rem 29.875rem, rgb(235, 71, 139) 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 23.5rem at 80.625rem 0, #4754EB 0%, rgba(0, 0, 0, 0)), radial-gradient(circle 79rem at 70.875rem 0, white 0%, rgba(0, 0, 0, 0)), #F2F2F2;
 }
 .how-we-work__content {
   display: flex;

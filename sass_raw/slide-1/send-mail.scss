@@ -1,10 +1,61 @@
 @use '../general/colors' as *;
 @use "../general/general-elements" as *;
+@use "../general/animation" as *;
 
 .send-mail{
-  background-image: url("../images/svg/1Screen.svg");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  &__slide-1{
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    position: absolute;
+    opacity: 0;
+    animation: 5s infinite background-slide;
+    animation-delay: -2.5s;
+    background:
+            radial-gradient(circle 20.25rem at 22.5rem 15.765rem , $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 13.5rem at 19.578rem 42.197rem, #8633B0 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 19.75rem at 27.187rem 12px, white 0%,rgba(0,0,0,0)),
+            radial-gradient(circle 10.875rem at 71.585rem 30.375rem, $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 16rem at 81.772rem 17.880rem, white 0%,rgba(0,0,0,0)),
+            $gray;
+  }
+
+  &__slide-2{
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    position: absolute;
+    opacity: 0;
+    animation: 5s infinite background-slide;
+    background:
+            radial-gradient(circle 19.625rem at 30.226rem 36.75rem, $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 12.5rem at 22.448rem 30.723rem, #863380 0%,rgba(0,0,0,0)),
+            radial-gradient(circle 15.625rem at 82.312rem 23.562rem , blue 0%,rgba(0,0,0,0)),
+            radial-gradient(circle 19.625rem at 45.25rem 7.0625rem, white 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 9.375rem at 99.0625rem 43.5rem, white 0%,rgba(0,0,0,0)),
+            $gray;
+  }
+  &__slide-3{
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    position: absolute;
+    opacity: 0;
+    animation: 5s infinite background-slide;
+    animation-delay: 2.5s;
+    background:
+            radial-gradient(circle 21.25rem at 15.437rem 30.812rem, $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 18.75rem at 91.437rem 17.875rem, $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 11.125rem at 82.5rem 35.24rem, white 0%,rgba(0,0,0,0)),
+            radial-gradient(circle 23.5rem at 80.625rem 45.312rem, $blue 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 14.375rem at 42.875rem 35.875rem, #8633B0 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 21.375rem at 35.937rem 1rem, white 0%,rgba(0,0,0,0)),
+            radial-gradient(circle 11.125rem at 82.5rem 35.25rem, white 0%, rgba(0,0,0,0)),
+            radial-gradient(circle 18.75rem at 61.562rem 35.875rem, #8633B0 0%, rgba(0,0,0,0)),
+            $gray;
+  }
+
   &__inner{
     display: flex;
     align-items: center;
@@ -12,8 +63,8 @@
   }
   &__form{
     gap: 7.875rem;
-    max-height: 39.25rem;
-    max-width: 39.25rem;
+    height: 39.25rem;
+    width: 39.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

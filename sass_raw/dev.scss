@@ -5,22 +5,41 @@
 
 .test-1 {
   position: absolute;
-  display: none;
   height: 45rem;
   width: 87rem;
-  background: radial-gradient(circle 40.625rem at 22.5rem 15.765rem , $blue 0%, rgba(0,0,0,0)), radial-gradient(circle 27rem at 19.578rem 42.197rem, #8633B0 0%, rgba(0,0,0,0)), radial-gradient(circle 39.687rem at 27.187rem 12px, white 0%,rgba(0,0,0,0)), radial-gradient(circle 21.875rem at 71.585rem 30.375rem, $blue 0%, rgba(0,0,0,0)), radial-gradient(circle 32rem at 81.772rem 17.880rem, white 0%,rgba(0,0,0,0)), $gray;
+  display: block;
+  background:
+          radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0,0,0,0)),
+          radial-gradient(circle 13.25rem at 84rem 0, #EB478B,rgba(0,0,0,0)),
+          radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B,rgba(0,0,0,0)),
+          radial-gradient(circle 17.5rem at 81rem 38rem, $blue 0, rgba(0,0,0,0)),
+          radial-gradient(circle 40rem at 0 33rem, white 0,rgba(0,0,0,0)),
+          $gray;
+
 }
 .test-2 {
   position: absolute;
-  display: none;
   height: 45rem;
+  display: none;
   width: 87rem;
-  background: radial-gradient(circle 39.375rem at 30.226rem 36.75rem, $blue 0%, rgba(0,0,0,0)),radial-gradient(circle 25rem at 22.448rem 30.723rem, #863380 0%,rgba(0,0,0,0)), radial-gradient(circle 31.25rem at 82.312rem 23.562rem , blue 0%,rgba(0,0,0,0)),radial-gradient(circle 39.375rem at 45.25rem 7.0625rem, white 0%, rgba(0,0,0,0)),radial-gradient(circle 18.75rem at 99.0625rem 43.5rem, white 0%,rgba(0,0,0,0)), $gray;
+  background:
+          radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0,0,0,0)),
+          radial-gradient(circle 13.25rem at 84rem 0, #EB478B,rgba(0,0,0,0)),
+          radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B,rgba(0,0,0,0)),
+          radial-gradient(circle 17.5rem at 81rem 38rem, $blue 0, rgba(0,0,0,0)),
+          radial-gradient(circle 40rem at 0 33rem, white 0,rgba(0,0,0,0)),
+          $gray;
 
 }
 .test-3 {
   position: absolute;
   height: 45rem;
   width: 87rem;
-  background: ;
+  display: none;
+  background:
+          radial-gradient(circle 18.375rem at 43.125rem 25.25rem, white 0%, rgba(0,0,0,0)),
+          radial-gradient(circle 14rem at 35.375rem 29.875rem, rgba(235,71,139, 1) 0%, rgba(0,0,0,0)),
+          radial-gradient(circle 23.5rem at 80.625rem 0, $blue 0%, rgba(0,0,0,0)),
+          radial-gradient(circle 79rem at 70.875rem 0, white 0%, rgba(0,0,0,0)),
+          $gray;
 }
