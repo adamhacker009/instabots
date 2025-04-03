@@ -4,17 +4,17 @@ answer.className = 'question__body'
 answer.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.'
 
 
-// $('.header__burger_button').addEventListener('click', function(){
-//     if($("#burger-hidden")){
-//         $("#burger-hidden").id = 'burger-show'
-//         $("main").style.display = 'none'
-//         $(".footer").style.display = 'none'
-//     } else {
-//         $("#burger-show").id = 'burger-hidden'
-//         $("main").style.display = 'block'
-//         $(".footer").style.display = "block"
-//     }
-// })
+$('.header__burger-button').addEventListener('click', function(){
+    if($(".header-burger_hidden")){
+        $(".header-burger_hidden").classList.replace("header-burger_hidden","header-burger_show")
+        $("main").style.display = 'none'
+        $(".footer").style.display = 'none'
+    } else {
+        $(".header-burger_show").classList.replace("header-burger_show", "header-burger_hidden")
+        $("main").style.display = 'block'
+        $(".footer").style.display = "block"
+    }
+})
 const advantages = document.querySelectorAll('.advantage')
 const reviews = document.querySelectorAll('.review');
 const workInfo = document.querySelectorAll('.work-info__select')

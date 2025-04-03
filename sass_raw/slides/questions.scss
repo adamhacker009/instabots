@@ -1,9 +1,40 @@
 @use "../general/colors" as *;
 @use "../general/general-elements" as *;
+@use "../general/animation" as *;
 
 .questions{
-  background-image: url("../images/svg/7Screen.svg");
-  background-size: 100%;
+  position: relative;
+  &__background-slide-{
+    &1 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      animation-delay: -2.5s;
+      background: url("../images/imgs/bg_questions1.png"), $gray;
+    }
+    &2 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      background: url("../images/imgs/bg_questions2.png"), $gray;
+    }
+    &3 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      animation-delay: 2.5s;
+      background: url("../images/imgs/bg_questions3.png"), $gray;
+    }
+  }
   &__inner{
     @extend .container-lg;
     display: flex;

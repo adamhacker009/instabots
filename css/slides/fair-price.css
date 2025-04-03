@@ -144,7 +144,7 @@ section {
   padding: 1rem 1.25rem;
 }
 
-.input-button {
+.input-button, .fair-price__button {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 1rem;
@@ -214,7 +214,7 @@ section {
   .input, .textarea {
     font-size: 0.875rem;
   }
-  .input-button {
+  .input-button, .fair-price__button {
     font-size: 0.875rem;
   }
   .under-text {
@@ -234,5 +234,54 @@ section {
     display: none;
   }
 }
+.fair-price__container {
+  display: flex;
+  align-items: center;
+}
+.fair-price__container .image {
+  transition-duration: 0.9s;
+}
+.fair-price__input {
+  position: relative;
+  background-color: #F2F2F2;
+  color: #808080;
+  border-radius: 1.25rem;
+}
+.fair-price__button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  color: white;
+  background-color: #4754EB;
+  padding: 0.75rem 1.5rem;
+  transition-duration: 0.3s;
+}
+.fair-price__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.fair-price__button:active {
+  padding: 0.75rem 1.5rem;
+  background-color: #2F3BB7;
+}
+.fair-price__form {
+  max-width: 28.5rem;
+}
 
-/*# sourceMappingURL=general-elements.css.map */
+@media (max-width: 1234px) {
+  .fair-price__form {
+    max-width: 28.13rem;
+  }
+  .fair-price__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  .fair-price__container {
+    padding: 2.5rem 0;
+  }
+  .fair-price__form {
+    max-width: 22.85714rem;
+  }
+}
+
+/*# sourceMappingURL=fair-price.css.map */

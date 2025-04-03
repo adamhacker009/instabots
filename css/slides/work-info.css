@@ -40,7 +40,7 @@ body {
   display: block;
 }
 
-.button, .auth-button, .button-alt {
+.button, .work-info__button, .auth-button, .button-alt {
   background-color: #4754EB;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -151,7 +151,7 @@ section {
   font-size: 1.125rem;
 }
 
-.high-light {
+.high-light, .work-info__high-light {
   color: #4754EB;
 }
 
@@ -234,5 +234,92 @@ section {
     display: none;
   }
 }
+.work-info {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 31.812rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work-info__elements {
+  display: flex;
+  max-width: 26.38rem;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.875rem;
+}
+.work-info__head {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.work-info__high-light {
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.work-info__text-content {
+  color: #808080;
+  line-height: 135%;
+  font-size: 1.125rem;
+}
+.work-info__text-content:nth-child(1) {
+  margin-bottom: 1rem;
+}
+.work-info__button {
+  font-size: 1.125rem;
+  margin-top: 2.531rem;
+}
+.work-info__button:hover {
+  padding: 0.625rem 1.5rem 0.875rem;
+}
+.work-info__button:active {
+  background-color: #2F3BB7;
+  padding: 0.75rem 1.5rem;
+}
+.work-info__select {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  transition-duration: 0.2s;
+}
+.work-info__select:hover {
+  color: #4754EB;
+}
+.work-info__select_high-light {
+  background-color: rgba(0, 0, 0, 0);
+  color: #4754EB;
+  border: none;
+}
 
-/*# sourceMappingURL=general-elements.css.map */
+@media (max-width: 1234px) {
+  .work-info {
+    max-width: 38rem;
+    height: auto;
+  }
+}
+@media (max-width: 580px) {
+  .work-info__high-light {
+    font-size: 1rem;
+  }
+  .work-info__p {
+    font-size: 1rem;
+  }
+  .work-info__head {
+    font-size: 1.85714rem;
+    margin-bottom: 0.5rem;
+  }
+  .work-info__button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .work-info__elements {
+    gap: 0.5714rem;
+    margin-bottom: 1.5rem;
+  }
+  .work-info span {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=work-info.css.map */

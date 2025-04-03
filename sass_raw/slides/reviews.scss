@@ -1,9 +1,60 @@
 @use "../general/general-elements" as *;
 @use "../general/colors" as *;
+@use "../general/animation" as *;
 
 .reviews{
-  background-image: url("../images/svg/3Screen.svg");
-  background-size: cover;
+  position: relative;
+  &__background-slide- {
+    &1 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      animation-delay: -2.5s;
+      background:
+              radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0,0,0,0)),
+              radial-gradient(circle 13.25rem at 84rem 0, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 17.5rem at 81rem 38rem, $blue 0, rgba(0,0,0,0)),
+              radial-gradient(circle 40rem at 0 33rem, white 0,rgba(0,0,0,0)),
+              $gray;
+    }
+    &2 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      animation-delay: -2.5s;
+      background:
+              radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0,0,0,0)),
+              radial-gradient(circle 13.25rem at 84rem 0, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 14.5rem at 83.125rem 38rem, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 17.5rem at 81rem 38rem, $blue 0, rgba(0,0,0,0)),
+              radial-gradient(circle 40rem at 0 33rem, white 0,rgba(0,0,0,0)),
+              $gray;
+    }
+    &3 {
+      height: 100%;
+      width: 100%;
+      max-width: 100vw;
+      position: absolute;
+      opacity: 0;
+      animation: 5s infinite background-slide;
+      animation-delay: -2.5s;
+      background:
+              radial-gradient(circle 16rem at 84rem 0, #863380, rgba(0,0,0,0)),
+              radial-gradient(circle 13.25rem at 84rem 0, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 15.5rem at 83.125rem 38rem, #EB478B,rgba(0,0,0,0)),
+              radial-gradient(circle 17.5rem at 81rem 38rem, $blue 0, rgba(0,0,0,0)),
+              radial-gradient(circle 40rem at 0 33rem, white 0,rgba(0,0,0,0)),
+              $gray;
+    }
+  }
+
   &__cats-structured{
     color: $dark-gray;
     font-size: 1.5rem;
@@ -17,6 +68,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 5rem 0;
+    height: 60.25rem;
   }
   &__title{
     font-size: 2.25rem;
@@ -124,6 +176,7 @@
     grid-template-rows: 1fr repeat(4, 3fr);
     gap: 1.5rem;
     justify-items: center;
+    height: auto;
   }
 
   .review{
@@ -138,6 +191,13 @@
     display: none;
   }
 
+}
+
+@media (max-width: 672px) {
+  .reviews__inner{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 580px){

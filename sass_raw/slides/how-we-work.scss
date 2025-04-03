@@ -70,21 +70,21 @@
   }
   &__slide-{
     &1{
-      max-width: 28.937rem;
+      width: 100%;
       position: absolute;
       top: 1.875rem;
       transition-duration: 0.5s;
       transform: translateX(0);
     }
     &2{
-      max-width: 28.937rem;
+      width: 100%;
       position: absolute;
       top: 1.875rem;
       transition-duration: 0.5s;
       transform: translateX(-100%);
     }
     &3{
-      max-width: 28.937rem;
+      width: 100%;
       position: absolute;
       top: 1.875rem;
       transition-duration: 0.5s;
@@ -101,5 +101,16 @@
 
 }
 @media (max-width: 580px){
+  .how-we-work__slide- {
+    &1 {
+      top: 2.5rem
+    }
+    &2 {
+      top: 2.5rem
+    }
+    &3 {
+       top: 2.5rem
+     }
 
+  }
 }

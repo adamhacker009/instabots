@@ -2,11 +2,10 @@
 @use "../general/general-elements" as *;
 
 .work-info{
-  max-width: 28.94rem;
+  width: 100%;
   overflow: hidden;
   position: relative;
   min-height: 31.812rem;
-  min-width: 32.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,9 +71,7 @@
 @media (max-width: 580px){
   .work-info{
 
-    max-width: 20rem;
-
-    &__high_light{
+    &__high-light{
       font-size: 1rem;
     }
 

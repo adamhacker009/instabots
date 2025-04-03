@@ -27,6 +27,46 @@
     border: none;
     padding: 0.5rem;
   }
+  &-burger{
+    min-height: 45.75rem;
+
+    &_show{
+      display: block;
+    }
+    &_hidden{
+      display: none;
+    }
+    &__lang-change{
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      word-spacing: 2px;
+      color: #4754EB;
+      margin-right: 0;
+      font-size: 2.25rem;
+      display: block;
+      margin-top: 17rem;
+    }
+    &__container{
+      margin-top: 2.5rem;
+      margin-left: 1.25rem;
+    }
+    &__head{
+      color: $dark-gray;
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+    &__nav{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &__link{
+      font-size: 2.25rem;
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
   &__scroll-next{
     display: flex;
     align-items: center;
@@ -46,9 +86,6 @@
     }
   }
 
-  &-burger__lang-change{
-    @extend .lang-change;
-  }
   &__menu-buttons{
     display: flex;
   }

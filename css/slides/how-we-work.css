@@ -75,5 +75,16 @@
     flex-direction: column;
   }
 }
+@media (max-width: 580px) {
+  .how-we-work__slide-1 {
+    top: 2.5rem;
+  }
+  .how-we-work__slide-2 {
+    top: 2.5rem;
+  }
+  .how-we-work__slide-3 {
+    top: 2.5rem;
+  }
+}
 
 /*# sourceMappingURL=how-we-work.css.map */

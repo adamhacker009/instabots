@@ -234,9 +234,48 @@ section {
     display: none;
   }
 }
+@keyframes background-slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .questions {
-  background-image: url("../images/svg/7Screen.svg");
-  background-size: 100%;
+  position: relative;
+}
+.questions__background-slide-1 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: -2.5s;
+  background: url("../images/imgs/bg_questions1.png"), #F2F2F2;
+}
+.questions__background-slide-2 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  background: url("../images/imgs/bg_questions2.png"), #F2F2F2;
+}
+.questions__background-slide-3 {
+  height: 100%;
+  width: 100%;
+  max-width: 100vw;
+  position: absolute;
+  opacity: 0;
+  animation: 5s infinite background-slide;
+  animation-delay: 2.5s;
+  background: url("../images/imgs/bg_questions3.png"), #F2F2F2;
 }
 .questions__inner {
   display: flex;

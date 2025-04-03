@@ -148,7 +148,7 @@ section{
   border-radius: 1rem;
   transition-duration: 0.5s;
   &:focus{
-    border: #4754EB;
+    outline: none;
   }
   &:hover::placeholder{
     color: #4754EB;
