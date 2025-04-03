@@ -7,10 +7,12 @@ answer.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mas
 $('.header__burger-button').addEventListener('click', function(){
     if($(".header-burger_hidden")){
         $(".header-burger_hidden").classList.replace("header-burger_hidden","header-burger_show")
-        $("main").style.display = 'none'
+        $("main").style.opacity="0"
+            $("main").style.display = 'none'
         $(".footer").style.display = 'none'
     } else {
         $(".header-burger_show").classList.replace("header-burger_show", "header-burger_hidden")
+        $("main").style.opacity="100"
         $("main").style.display = 'block'
         $(".footer").style.display = "block"
     }

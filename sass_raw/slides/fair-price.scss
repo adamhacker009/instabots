@@ -5,6 +5,7 @@
 .fair-price{
   &__container{
     display: flex;
+    overflow: hidden;
     align-items: center;
     .image{
       transition-duration: 0.9s

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="wrapper container">
                 <div class="header__inner">
                     <div class="header__logo-buttons">
@@ -38,23 +38,21 @@
             </div>
         </header>
         <div class="header-burger header-burger_hidden">
-            <div class="container-blur">
-                    <div class="container wrapper">
-                        <div class="header-burger__container">
-                            <h4 class="header-burger__head">Меню</h4>
-                            <nav class="header-burger__nav">
-                                <a href="" class="header-burger__link">О компании</a>
-                                <a href="" class="header-burger__link">Тарифы</a>
-                                <a href="" class="header-burger__link">Отзывы</a>
-                                <a href="" class="header-burger__link">Q&A</a>
-                                <a href="" class="header-burger__link">Обратная связь</a>
-                            </nav>
+                        <div class="container wrapper header-burger__container">
+                            <div>
+                                <h4 class="header-burger__head">Меню</h4>
+                                <nav class="header-burger__nav">
+                                    <a href="" class="header-burger__link">О компании</a>
+                                    <a href="" class="header-burger__link">Тарифы</a>
+                                    <a href="" class="header-burger__link">Отзывы</a>
+                                    <a href="" class="header-burger__link">Q&A</a>
+                                    <a href="" class="header-burger__link">Обратная связь</a>
+                                </nav>
+                            </div>
                             <div>
                                 <button class="header-burger__lang-change"><span class="lang-change__lang">Ru</span>/<span class="lang-change__lang lang-change__not_selected">En</span></button>
                             </div>
                         </div>
-                    </div>
-                </div>
         </div>
         <main>
             <section class="send-mail">
@@ -572,8 +570,8 @@
                             <p>© 2021 Copyright reserved Instabots</p>
                         </div>
                         <div class="footer__nav">
-                            <a href="" class="footer__link_default">Вернуться наверх</a>
-                            <a href="" class="footer__link_small">Наверх</a>
+                            <a href="#header" class="footer__link_default">Вернуться наверх</a>
+                            <a href="#header" class="footer__link_small">Наверх</a>
                             <img class="image" src="./images/svg/Arrow.svg" alt="arrow">
                         </div>
                     </div>

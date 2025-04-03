@@ -79,6 +79,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+main {
+  transition-duration: 0.2s;
+}
+
 .general-text {
   color: #808080;
   font-size: 1.125rem;
@@ -396,7 +400,7 @@ section {
 @media (max-width: 1234px) {
   .reviews__inner {
     display: grid;
-    grid-template-rows: 1fr repeat(4, 3fr);
+    grid-template-rows: 1fr repeat(2, 3fr);
     gap: 1.5rem;
     justify-items: center;
     height: auto;

@@ -79,6 +79,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
+main {
+  transition-duration: 0.2s;
+}
+
 .general-text {
   color: #808080;
   font-size: 1.125rem;
@@ -236,6 +240,7 @@ section {
 }
 .fair-price__container {
   display: flex;
+  overflow: hidden;
   align-items: center;
 }
 .fair-price__container .image {

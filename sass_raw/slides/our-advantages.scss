@@ -42,7 +42,7 @@
   @extend .container-lg;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
+  gap: 1rem;
 }
 @media (max-width: 1234px){
   .our-advantages__grid{

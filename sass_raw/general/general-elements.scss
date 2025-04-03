@@ -87,6 +87,10 @@ section{
   margin-bottom: 2.5rem;
 }
 
+main {
+  transition-duration: 0.2s;
+}
+
 .general-text{
   color: $dark-gray;
   font-size: 1.125rem;
