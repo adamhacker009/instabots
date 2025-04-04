@@ -6,10 +6,21 @@
   src: url('./fonts/VisueltPro-Regular.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'VisueltPro', sans-serif;
+  background-color: $gray;
+  padding: 1.5rem;
+  min-height: 100vh;
 }
 
 .textarea{
@@ -29,13 +40,6 @@
     color: #4754EB;
   }
 
-}
-
-body{
-  font-family: 'VisueltPro', sans-serif;
-  background-color: $gray;
-  padding: 1.5rem;
-  min-height: 100vh;
 }
 
 #burger-hidden{
@@ -95,7 +99,8 @@ main {
 }
 
 .main_hidden {
-  animation: main_hidden-animation 0.25s;
+  opacity: 0;
+  display: none;
 }
 
 .general-text{
@@ -123,7 +128,6 @@ main {
 .page-wrapper {
   background-color: white;
   border-radius: 1.5rem;
-  scroll-behavior: smooth;
 }
 
 .wrapper

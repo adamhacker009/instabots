@@ -14,9 +14,6 @@ $('.header__burger-button').addEventListener('click', function(){
         })
         $("main").classList.toggle('main_hidden')
         $(".footer").style.display = 'none'
-        setTimeout(()=>{
-            $('main').style.display="none"
-        },25)
     } else {
         $(".header-burger_show").classList.replace("header-burger_show", "header-burger_hidden")
         $("main").classList.remove('main_hidden')
@@ -25,9 +22,6 @@ $('.header__burger-button').addEventListener('click', function(){
         document.querySelectorAll(".header__burger-line_small_pressed").forEach(el=>{
             el.classList.remove("header__burger-line_small_pressed")
         })
-        setTimeout(()=>{
-            $('main').style.display="block"
-        },25)
     }
 })
 
@@ -50,7 +44,7 @@ const observer = new IntersectionObserver(entries => {
             }
         }
     })
-})
+}, { threshold: 0.75 })
 
 reviews.forEach(review => {
     review.addEventListener('click', function () {
@@ -70,13 +64,13 @@ workInfo.forEach((selector, id) => {
         switch (id) {
             case 0:
                 $(".how-we-work__slide-1").style.transform = 'translateX(0)'
-                $(".how-we-work__slide-2").style.transform = 'translateX(-100%)'
-                $(".how-we-work__slide-3").style.transform = 'translateX(150%)'
+                $(".how-we-work__slide-2").style.transform = 'translateX(100%)'
+                $(".how-we-work__slide-3").style.transform = 'translateX(100%)'
                 break
             case 1:
                 $(".how-we-work__slide-1").style.transform = 'translateX(-100%)'
                 $(".how-we-work__slide-2").style.transform = 'translateX(0)'
-                $(".how-we-work__slide-3").style.transform = 'translateX(150%)'
+                $(".how-we-work__slide-3").style.transform = 'translateX(100%)'
                 break
             case 2:
                 $(".how-we-work__slide-1").style.transform = 'translateX(-100%)'

@@ -9,22 +9,25 @@
     opacity: 0;
   }
 }
-@keyframes main_hidden-animation {
-  0% {
-    opacity: 100;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @font-face {
   font-family: "VisueltPro";
   src: url("./fonts/VisueltPro-Regular.ttf");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "VisueltPro", sans-serif;
+  background-color: #F2F2F2;
+  padding: 1.5rem;
+  min-height: 100vh;
 }
 
 .textarea {
@@ -42,13 +45,6 @@
 }
 .textarea:hover::placeholder {
   color: #4754EB;
-}
-
-body {
-  font-family: "VisueltPro", sans-serif;
-  background-color: #F2F2F2;
-  padding: 1.5rem;
-  min-height: 100vh;
 }
 
 #burger-hidden {
@@ -104,7 +100,8 @@ main {
 }
 
 .main_hidden {
-  animation: main_hidden-animation 0.25s;
+  opacity: 0;
+  display: none;
 }
 
 .general-text {
@@ -129,7 +126,6 @@ main {
 .page-wrapper {
   background-color: white;
   border-radius: 1.5rem;
-  scroll-behavior: smooth;
 }
 
 .wrapper {
