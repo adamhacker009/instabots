@@ -1,25 +1,36 @@
 $ = (id) => document.querySelector(id)
-let answer = document.createElement('div')
-answer.className = 'question__body'
-answer.innerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus, lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor, porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam. Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.'
 
-
-$('.header__burger-button').addEventListener('click', function(){
-    if($(".header-burger_hidden")){
-        $(".header-burger_hidden").classList.replace("header-burger_hidden","header-burger_show")
-        $("main").style.opacity="0"
-            $("main").style.display = 'none'
-        $(".footer").style.display = 'none'
-    } else {
-        $(".header-burger_show").classList.replace("header-burger_show", "header-burger_hidden")
-        $("main").style.opacity="100"
-        $("main").style.display = 'block'
-        $(".footer").style.display = "block"
-    }
-})
 const advantages = document.querySelectorAll('.advantage')
 const reviews = document.querySelectorAll('.review');
 const workInfo = document.querySelectorAll('.work-info__select')
+
+$('.header__burger-button').addEventListener('click', function(){
+    if($(".header-burger_hidden")){
+
+        $(".header-burger_hidden").classList.replace("header-burger_hidden","header-burger_show")
+        $(".header__burger-line_big").classList.toggle('header__burger-line_big_pressed')
+        document.querySelectorAll(".header__burger-line_small").forEach(el=>{
+            el.classList.toggle("header__burger-line_small_pressed")
+        })
+        $("main").classList.toggle('main_hidden')
+        $(".footer").style.display = 'none'
+        setTimeout(()=>{
+            $('main').style.display="none"
+        },25)
+    } else {
+        $(".header-burger_show").classList.replace("header-burger_show", "header-burger_hidden")
+        $("main").classList.remove('main_hidden')
+        $(".footer").style.display = "block"
+        $(".header__burger-line_big_pressed").classList.remove('header__burger-line_big_pressed')
+        document.querySelectorAll(".header__burger-line_small_pressed").forEach(el=>{
+            el.classList.remove("header__burger-line_small_pressed")
+        })
+        setTimeout(()=>{
+            $('main').style.display="block"
+        },25)
+    }
+})
+
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {

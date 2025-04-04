@@ -21,12 +21,59 @@
   }
   &__burger{
     display: none;
+    &-line_big {
+      opacity: 100;
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      height: 2px;
+      width: 16px;
+      border-radius: 25%;
+      background-color: $blue;
+      transition-duration: 0.2s;
+      &_pressed{
+        opacity: 0;
+      }
+    }
+    &-line_small {
+      position: absolute;
+      height: 2px;
+      width: 12px;
+      background-color: $blue;
+      border-radius: 25%;
+      transition-duration: 0.2s;
+      &:nth-child(2) {
+        top: 13px;
+        left: 7px;
+      }
+      &:nth-child(3) {
+        top: 19px;
+        left: 7px;
+      }
+      &_pressed {
+        &:nth-child(2) {
+          top: 14px;
+          left: 14px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          top: 14px;
+          left: 14px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
   }
   &__burger-button{
     background-color: rgba(255, 255, 255, 0.0);
     border: none;
+    position:relative;
     padding: 0.5rem;
+    height: 2rem;
+    width: 2rem;
   }
+
+
   &-burger{
     transition-duration: 0.2s;
     overflow: hidden;

@@ -1,3 +1,22 @@
+@keyframes background-slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes main_hidden-animation {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: "VisueltPro";
   src: url("./fonts/VisueltPro-Regular.ttf");
@@ -80,7 +99,12 @@ section {
 }
 
 main {
+  opacity: 100;
   transition-duration: 0.2s;
+}
+
+.main_hidden {
+  animation: main_hidden-animation 0.25s;
 }
 
 .general-text {
@@ -236,17 +260,6 @@ main {
   }
   .auth-button {
     display: none;
-  }
-}
-@keyframes background-slide {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 .send-mail {

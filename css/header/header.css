@@ -1,3 +1,22 @@
+@keyframes background-slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes main_hidden-animation {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: "VisueltPro";
   src: url("./fonts/VisueltPro-Regular.ttf");
@@ -80,7 +99,12 @@ section {
 }
 
 main {
+  opacity: 100;
   transition-duration: 0.2s;
+}
+
+.main_hidden {
+  animation: main_hidden-animation 0.25s;
 }
 
 .general-text {
@@ -260,10 +284,53 @@ main {
 .header__burger {
   display: none;
 }
+.header__burger-line_big {
+  opacity: 100;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 2px;
+  width: 16px;
+  border-radius: 25%;
+  background-color: #4754EB;
+  transition-duration: 0.2s;
+}
+.header__burger-line_big_pressed {
+  opacity: 0;
+}
+.header__burger-line_small {
+  position: absolute;
+  height: 2px;
+  width: 12px;
+  background-color: #4754EB;
+  border-radius: 25%;
+  transition-duration: 0.2s;
+}
+.header__burger-line_small:nth-child(2) {
+  top: 13px;
+  left: 7px;
+}
+.header__burger-line_small:nth-child(3) {
+  top: 19px;
+  left: 7px;
+}
+.header__burger-line_small_pressed:nth-child(2) {
+  top: 14px;
+  left: 14px;
+  transform: rotate(45deg);
+}
+.header__burger-line_small_pressed:nth-child(3) {
+  top: 14px;
+  left: 14px;
+  transform: rotate(-45deg);
+}
 .header__burger-button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  position: relative;
   padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 .header-burger {
   transition-duration: 0.2s;

@@ -1,4 +1,5 @@
 @use 'colors' as *;
+@use "animation";
 
 @font-face{
   font-family: 'VisueltPro';
@@ -87,8 +88,14 @@ section{
   margin-bottom: 2.5rem;
 }
 
+
 main {
+  opacity: 100;
   transition-duration: 0.2s;
+}
+
+.main_hidden {
+  animation: main_hidden-animation 0.25s;
 }
 
 .general-text{

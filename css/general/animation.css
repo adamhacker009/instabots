@@ -9,5 +9,13 @@
     opacity: 0;
   }
 }
+@keyframes main_hidden-animation {
+  0% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=animation.css.map */
